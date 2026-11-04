@@ -3379,6 +3379,16 @@ html[lang="ta"] .stamp--contact .help-side { font-family: var(--f-tamil-display)
 .section-head > .pb-phone { left: auto !important; right: -12px; top: -64px; width: clamp(84px, 11vw, 120px) !important; transform: rotate(12deg); }
 @media (max-width: 520px) { .section-head > .pb-phone { right: -4px; top: -54px; width: 76px !important; } }
 
+/* ---------- 80 CALENDAR ON PHONES: COUNTDOWN CLOCK NO LONGER OVERLAPS THE MONTH ---------- */
+@media (max-width: 560px) {
+  .calendar .cal-board .cal__boxes { grid-template-columns: .9fr 1fr 1.15fr; }
+  .calendar .cal-board .cal__box { min-width: 0; overflow: hidden; padding: 8px 4px; }
+  .calendar .cal-board .cal__hms { font-size: 1.05rem; white-space: nowrap; letter-spacing: 0; }
+  .calendar .cal-board .cal__hms span { font-size: inherit; }
+  .calendar .cal-board .cal__wk { font-size: 1.15rem; white-space: nowrap; }
+  .calendar .cal-board .cal__wd { font-size: .72rem; white-space: nowrap; }
+}
+
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
