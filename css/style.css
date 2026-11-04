@@ -4348,3 +4348,15 @@ body .calendar .cal-board .cal__forecast b { font-family: var(--f-display); font
 body .calendar .cal-board .cal__table td:first-child { width: 128px; min-width: 128px; font-size: 1.45rem; padding-right: 10px; }
 body .calendar .cal-board .cal__table td:nth-child(2) { font-weight: 700; font-size: 1.3rem; line-height: 1.25; }
 body .calendar .cal-board .cal__table td:last-child { font-size: 1.1rem; }
+
+/* ---------- 136 CALENDAR: CENTRED DATES, LIVE COUNTDOWN WITH SECONDS, BIGGER NUMBERS ---------- */
+body .calendar .cal-board .cal__table td:first-child { text-align: center; }
+body .calendar .cal-board .cal__count { font-size: clamp(1.05rem, 1.9vw, 1.3rem); gap: clamp(10px, 2vw, 22px); }
+body .calendar .cal-board .cal__count-num b { font-size: clamp(2.6rem, 5.4vw, 3.8rem); line-height: 1; font-variant-numeric: tabular-nums; }
+body .calendar .cal-board .cal__count-num { gap: 6px; }
+body .calendar .cal-board .cal__orn { width: clamp(30px, 4vw, 42px); height: clamp(30px, 4vw, 42px); }
+
+/* keep the countdown on one line */
+body .calendar .cal-board .cal__count { flex-wrap: nowrap; }
+body .calendar .cal-board .cal__count-num b { font-size: clamp(2.2rem, 4.4vw, 3.2rem); }
+body .calendar .cal-board .cal__orn { width: clamp(24px, 3vw, 32px); height: clamp(24px, 3vw, 32px); }
