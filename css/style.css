@@ -4128,10 +4128,12 @@ body #contacts .hc-p__rel { margin: 2px 0 0; font-family: var(--f-sans); font-si
 body #contacts .hc-p__num { margin: 4px 0 0; font-family: var(--f-sans); font-size: clamp(1rem, 1.5vw, 1.15rem); letter-spacing: .08em; color: #FFFFFF; }
 body #contacts .hc-p__btns { display: flex; gap: clamp(10px, 1.2vw, 18px); }
 body #contacts a.hc-btn { display: flex; flex-direction: column; align-items: center; gap: 8px; color: #FFFFFF; text-decoration: none; font-family: var(--f-sans); font-size: .9rem; letter-spacing: .04em; }
-body #contacts .hc-btn__ring { display: block; width: 58px; height: 58px; border-radius: 50%; transition: transform .2s ease, filter .2s ease; filter: drop-shadow(0 6px 10px rgba(0, 0, 0, .35)); }
+body #contacts .hc-btn__ring { display: grid; place-items: center; width: 58px; height: 58px; border-radius: 50%; transition: transform .2s ease, filter .2s ease; filter: drop-shadow(0 6px 10px rgba(0, 0, 0, .35)); }
 body #contacts a.hc-btn:hover .hc-btn__ring, body #contacts a.hc-btn:focus-visible .hc-btn__ring { transform: translateY(-2px); }
 /* the WhatsApp logo has a tail, so it is drawn a little larger to read the same size as the Call circle */
-body #contacts .hc-btn__ring--wa { width: 66px; height: 66px; margin: -4px; }
+body #contacts .hc-btn__ring--call { background: #FFFFFF; color: #6E1A1E; }
+body #contacts .hc-btn__ring--wa { background: #25D366; color: #FFFFFF; }
+body #contacts .hc-btn__ring svg { width: 28px; height: 28px; }
 /* the tap target is the whole button (icon and label), kept at least 60px wide */
 body #contacts a.hc-btn { min-width: 60px; padding: 4px 6px; box-sizing: border-box; }
 body #contacts a.hc-btn:focus-visible { outline: 2px solid #FFFFFF; outline-offset: 4px; border-radius: 8px; }
@@ -4156,7 +4158,7 @@ body #contacts a.hc-btn:focus-visible { outline: 2px solid #FFFFFF; outline-offs
   body #contacts .hc-p { grid-template-columns: 1fr; row-gap: 14px; }
   body #contacts .hc-p__btns { gap: 18px; }
   body #contacts .hc-btn__ring { width: 46px; height: 46px; }
-  body #contacts .hc-btn__ring--wa { width: 50px; height: 50px; margin: -2px; }
+  body #contacts .hc-btn__ring svg { width: 22px; height: 22px; }
   body #contacts .hc-side { font-size: 1.4rem; white-space: nowrap; gap: 8px; }
   body #contacts .hc-swirl { width: 26px; }
   body #contacts .hc-p__btns { gap: 14px; }
