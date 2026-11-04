@@ -3927,6 +3927,9 @@ html[lang="ta"] .stamp--contact .help-side { font-style: normal; letter-spacing:
 }
 @media (max-width: 899px) { #contacts .help-col.stamp .stamp__paper { background-size: 40px 40px, 38px 38px, 40px 40px, 38px 38px, auto !important; } }
 
+/* ---------- 125 NEED HELP: SAME BACKGROUND AS THE STORY SECTION (NO TEMPLE WALL, PILLARS OR TORAN); NEW GROOM ---------- */
+#contacts.help { background: var(--grain), radial-gradient(70% 60% at 30% 40%, #4a3628, var(--album) 70%) !important; }
+#contacts .help-deco, #contacts::before, #contacts::after { display: none !important; content: none !important; }
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -4035,7 +4038,7 @@ html[lang="ta"] .stamp--contact .help-side { font-style: normal; letter-spacing:
 
 /* painted bride and groom from the reference style, each about 1.35 times the card height, overlapping the card edge */
 .help-col--bride .stamp__face::before { background-image: url("../assets/images/home/help-bride.png") !important; }
-.help-col--groom .stamp__face::before { background-image: url("../assets/images/home/help-groom.png") !important; }
+.help-col--groom .stamp__face::before { background-image: url("../assets/images/home/help-groom.jpg") !important; }
 @media (min-width: 900px) {
   #contacts .help-col.stamp .stamp__face::before { top: -17% !important; bottom: auto !important; height: 135% !important; width: auto !important; aspect-ratio: 277 / 798; background-size: 100% 100% !important; background-position: center !important; filter: drop-shadow(0 14px 22px rgba(0, 0, 0, .5)) !important; transform: none !important; }
   #contacts .help-col--bride.stamp .stamp__face::before { left: 0 !important; right: auto !important; transform: translateX(-70%) !important; }
@@ -4065,7 +4068,7 @@ html[lang="ta"] .stamp--contact .help-side { font-style: normal; letter-spacing:
     linear-gradient(160deg, rgba(150, 34, 38, .26), rgba(96, 18, 22, .32)) !important;
   -webkit-backdrop-filter: blur(22px) saturate(1.3); backdrop-filter: blur(22px) saturate(1.3); }
 /* groom: the attached picture, same height as the bride */
-.help-col--groom .stamp__face::before { background-image: url("../assets/images/home/help-groom.png") !important; }
+.help-col--groom .stamp__face::before { background-image: url("../assets/images/home/help-groom.jpg") !important; }
 
 /* mobile: stacked like the mockup. figure in the top-left corner of the card, name, then Call and WhatsApp side by side */
 @media (max-width: 899px) {
@@ -4087,3 +4090,7 @@ html[lang="ta"] .stamp--contact .help-side { font-style: normal; letter-spacing:
   #contacts .stamp--contact .help-p__name { font-size: 1.4rem !important; }
 }
 
+
+/* ---------- 126 NEED HELP: FINAL BACKGROUND OVERRIDE (STORY SECTION BACKGROUND) ---------- */
+body #contacts.help.help { background: var(--grain), radial-gradient(70% 60% at 30% 40%, #4a3628, var(--album) 70%) !important; }
+body #contacts.help.help::before, body #contacts.help.help::after { display: none !important; }
