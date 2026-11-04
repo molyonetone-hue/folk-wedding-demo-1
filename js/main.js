@@ -325,7 +325,7 @@
             '</div>' +
             '<div class="hc-p__btns">' +
               '<a class="hc-btn" href="tel:+' + digits + '" aria-label="' + esc(ui('call') + ' ' + t(p.name)) + '"><img class="hc-btn__ring" src="' + IMG + 'icon-call.png" alt="" width="240" height="240" loading="lazy" decoding="async"><span class="hc-btn__label">' + esc(ui('call')) + '</span></a>' +
-              '<a class="hc-btn" href="https://wa.me/' + digits + '" target="_blank" rel="noopener" aria-label="' + esc(ui('whatsapp') + ' ' + t(p.name)) + '"><img class="hc-btn__ring" src="' + IMG + 'icon-whatsapp.png" alt="" width="240" height="240" loading="lazy" decoding="async"><span class="hc-btn__label">' + esc(ui('whatsapp')) + '</span></a>' +
+              '<a class="hc-btn" href="https://wa.me/' + digits + '" target="_blank" rel="noopener" aria-label="' + esc(ui('whatsapp') + ' ' + t(p.name)) + '"><img class="hc-btn__ring hc-btn__ring--wa" src="' + IMG + 'icon-whatsapp.png" alt="" width="240" height="240" loading="lazy" decoding="async"><span class="hc-btn__label">' + esc(ui('whatsapp')) + '</span></a>' +
             '</div></li>';
         }).join('') + '</ul></div>';
       // desktop: figure | block (bride) ... block | figure (groom); the kolam sits between the two families
