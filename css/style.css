@@ -4128,9 +4128,8 @@ body #contacts .hc-p__rel { margin: 2px 0 0; font-family: var(--f-sans); font-si
 body #contacts .hc-p__num { margin: 4px 0 0; font-family: var(--f-sans); font-size: clamp(1rem, 1.5vw, 1.15rem); letter-spacing: .08em; color: #FFFFFF; }
 body #contacts .hc-p__btns { display: flex; gap: clamp(10px, 1.2vw, 18px); }
 body #contacts a.hc-btn { display: flex; flex-direction: column; align-items: center; gap: 8px; color: #FFFFFF; text-decoration: none; font-family: var(--f-sans); font-size: .9rem; letter-spacing: .04em; }
-body #contacts .hc-btn__ring { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; border: 1.5px solid #FFFFFF; transition: background .2s ease; }
-body #contacts .hc-btn__ring svg { width: 25px; height: 25px; color: #FFFFFF; }
-body #contacts a.hc-btn:hover .hc-btn__ring, body #contacts a.hc-btn:focus-visible .hc-btn__ring { background: rgba(255, 255, 255, .14); }
+body #contacts .hc-btn__ring { display: block; width: 58px; height: 58px; border-radius: 50%; transition: transform .2s ease, filter .2s ease; filter: drop-shadow(0 6px 10px rgba(0, 0, 0, .35)); }
+body #contacts a.hc-btn:hover .hc-btn__ring, body #contacts a.hc-btn:focus-visible .hc-btn__ring { transform: translateY(-2px); }
 body #contacts a.hc-btn:focus-visible { outline: 2px solid #FFFFFF; outline-offset: 4px; border-radius: 8px; }
 
 /* desktop: the figures stand a little past the edges of the column, like stickers, so the families get the room */
@@ -4143,16 +4142,18 @@ body #contacts a.hc-btn:focus-visible { outline: 2px solid #FFFFFF; outline-offs
 @media (max-width: 899px) {
   body #contacts .hc-grid { display: flex; flex-direction: column; gap: 40px; max-width: 600px; }
   body #contacts .hc-row { display: flex; align-items: center; gap: clamp(14px, 3vw, 26px); }
-  body #contacts .hc-fig { height: clamp(250px, 46vw, 330px); flex: none; }
+  body #contacts .hc-fig { height: clamp(330px, 62vw, 420px); flex: none; }
   body #contacts .hc-block { flex: 1; }
   body #contacts .hc-kolam { align-self: center; }
 }
 @media (max-width: 520px) {
-  body #contacts .hc-fig { height: 230px; }
+  body #contacts .hc-fig { height: 330px; }
   body #contacts .hc-row { gap: 12px; }
   body #contacts .hc-p { grid-template-columns: 1fr; row-gap: 14px; }
   body #contacts .hc-p__btns { gap: 18px; }
-  body #contacts .hc-btn__ring { width: 52px; height: 52px; }
-  body #contacts .hc-side { font-size: 1.55rem; }
-  body #contacts .hc-swirl { width: 34px; }
+  body #contacts .hc-btn__ring { width: 54px; height: 54px; }
+  body #contacts .hc-side { font-size: 1.4rem; white-space: nowrap; gap: 8px; }
+  body #contacts .hc-swirl { width: 26px; }
+  body #contacts .hc-p__btns { gap: 14px; }
+  body #contacts a.hc-btn { font-size: .82rem; }
 }
