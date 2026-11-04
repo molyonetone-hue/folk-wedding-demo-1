@@ -3751,6 +3751,21 @@ html[lang="ta"] .guestbook .wishes .wish-card__name { letter-spacing: 0; text-tr
 .memories .film__frame { width: var(--fh) !important; }
 .memories .film__frame img { border: 3px solid #0D0704; border-radius: 3px; filter: sepia(.38) saturate(.82) contrast(1.12) brightness(.95) !important; box-shadow: inset 0 0 24px rgba(50, 24, 8, .5); }
 
+/* ---------- 107 FOOTER: BRASS-AND-BANANA-LEAF FEAST BACKGROUND (SLIGHTLY BLURRED), CLEARER TEXT LAYOUT ---------- */
+.footer .footer__feast { background: url("../assets/images/home/feast-brass.jpg") center / cover no-repeat !important; filter: blur(2.5px) saturate(1.1) sepia(.12); transform: scale(1.06); }
+.footer .footer__feast::after { background:
+    radial-gradient(ellipse at 50% 52%, rgba(24, 10, 4, .38) 0%, rgba(24, 10, 4, .58) 74%),
+    linear-gradient(180deg, rgba(20, 8, 4, .6), rgba(20, 8, 4, 0) 22%, rgba(20, 8, 4, 0) 74%, rgba(20, 8, 4, .7)) !important; }
+.footer .footer__inner { max-width: 44rem; margin: 0 auto !important; padding: clamp(96px, 14vw, 150px) var(--gutter) calc(72px + env(safe-area-inset-bottom)) !important; }
+.footer .footer__feast-line { font-size: clamp(1.3rem, 3.4vw, 1.8rem); line-height: 1.4; letter-spacing: .01em; }
+.footer .footer__feast-line::after { content: ""; display: block; width: 64px; height: 1px; margin: 22px auto 0; background: linear-gradient(90deg, transparent, #E3B968, transparent); }
+.footer .footer__names { margin-top: 26px; line-height: 1.02; }
+.footer .footer__date { display: flex; flex-direction: column; align-items: center; gap: 12px; margin-top: 24px; font-size: .78rem; letter-spacing: .26em; }
+.footer .footer__sep { width: 7px; height: 7px; background: #E3B968; transform: rotate(45deg); opacity: .9; }
+html[lang="ta"] .footer .footer__date { letter-spacing: .06em; }
+.footer .footer__line { max-width: 24rem; margin: 30px auto 0; padding-top: 24px; border-top: 1px solid rgba(243, 213, 138, .3); font-size: 1.2rem; opacity: 1; }
+.footer .footer__credit { margin-top: 48px; }
+
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
