@@ -4299,3 +4299,32 @@ body .calendar .save-date__btn { font-size: 1.08rem; }
   body .calendar .cal-board .cal__table td:last-child { width: 24%; padding-right: 2px; }
   body .calendar .cal-board .cal__table td:nth-child(2) { padding-left: 8px; }
 }
+
+/* ---------- 132 CALENDAR: KEEPS THE LANDSCAPE CARD ON PHONES (SWIPE SIDEWAYS, TEXT AT FULL SIZE) ---------- */
+@media (max-width: 760px) {
+  body .calendar .calendar__wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 8px; }
+  body .calendar .cal-board { width: 800px; max-width: none; margin-left: 0; margin-right: auto; zoom: 1 !important; }
+  body .calendar .cal-board .cal__sheet { grid-template-columns: 1fr 14rem; padding: 40px 26px 24px; }
+  body .calendar .cal-board .cal__big { font-size: 152px; white-space: nowrap; }
+  body .calendar .cal-board .cal__info { grid-template-columns: 1fr 1fr 1fr; }
+  body .calendar .cal-board .cal__info > div { min-height: 118px; padding: 14px 10px; }
+  body .calendar .cal-board .cal__info > div + div { border-left: 2px solid #18181c; border-top: 0; }
+  body .calendar .cal-board .cal__wd-big { font-size: 2.5rem; }
+  body .calendar .cal-board .cal__dmy { font-size: 1.2rem; }
+  body .calendar .cal-board .cal__info-time b { font-size: 2.3rem; }
+  body .calendar .cal-board .cal__info-time .cal__k, body .calendar .cal-board .cal__info-place .cal__k { font-size: 1.1rem; }
+  body .calendar .cal-board .cal__info-place #cal-venue { font-size: 1rem; }
+  body .calendar .cal-board .cal__count { font-size: 1.1rem; gap: clamp(8px, 1.6vw, 18px); }
+  body .calendar .cal-board .cal__count-num b { font-size: 2.5rem; }
+  body .calendar .cal-board .cal__dot { display: inline; }
+  body .calendar .cal-board .cal__table-title { font-size: 1.9rem; }
+  body .calendar .cal-board .cal__table { table-layout: auto; }
+  body .calendar .cal-board .cal__table td { font-size: 1.15rem; padding: 9px 6px; }
+  body .calendar .cal-board .cal__table td:first-child { font-size: 1.25rem; width: 1%; }
+  body .calendar .cal-board .cal__table td:last-child { width: auto; padding-right: 6px; }
+  body .calendar .cal-board .cal__table td:nth-child(2) { padding-left: 12px; }
+  body .calendar .cal-board .cal__side { margin-top: 0; }
+  body .calendar .cal-board .cal__side-title { font-size: 1.9rem; }
+  body .calendar .cal-board .cal__forecast li { font-size: 1.05rem; padding: 5px 0; }
+  body .calendar .cal-board .cal__slip { display: block; }
+}
