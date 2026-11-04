@@ -4092,5 +4092,5 @@ html[lang="ta"] .stamp--contact .help-side { font-style: normal; letter-spacing:
 
 
 /* ---------- 126 NEED HELP: FINAL BACKGROUND OVERRIDE (STORY SECTION BACKGROUND) ---------- */
-body #contacts.help.help { background: var(--grain), radial-gradient(70% 60% at 30% 40%, #4a3628, var(--album) 70%) !important; }
+body #contacts.help.help { background: url("../assets/images/home/tex-maroon.jpg") center / cover, #4A1010 !important; }
 body #contacts.help.help::before, body #contacts.help.help::after { display: none !important; }
