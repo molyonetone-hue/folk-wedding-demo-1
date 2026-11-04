@@ -3497,6 +3497,14 @@ html[lang="ta"] .guestbook .pcard2 .pcard2__label { font-family: var(--f-tamil-d
   .guestbook .pcard2 .pform__send { border-radius: 999px !important; background: #5E1A1D !important; color: #F8EFD6 !important; min-height: 42px; padding: 8px 20px; font-size: .8rem; font-weight: 700; letter-spacing: .02em; }
 }
 
+/* ---------- 89 GUESTBOOK POSTCARD: NO RELATION FIELD; NAME AND POST BUTTON INSIDE THE ARTWORK WITH THE WISH ---------- */
+.guestbook .pcard2 .pcard2__line--2 { display: none !important; }
+@media (min-width: 820px) {
+  .guestbook .pcard2 .pcard2__msg { top: 22%; height: 40%; }
+  .guestbook .pcard2 .pcard2__line--1 { top: 71%; }
+  .guestbook .pcard2 .pcard2__foot { top: 84%; }
+}
+
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
