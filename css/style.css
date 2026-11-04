@@ -4195,3 +4195,8 @@ body #contacts a.hc-btn .hc-btn__ring svg { width: 17px; height: 17px; }
   body #contacts a.hc-btn { height: 46px; padding: 0 16px; font-size: .9rem; }
   body #contacts .hc-p__btns { gap: 10px; }
 }
+
+/* phones: Call and WhatsApp stack one above the other */
+@media (max-width: 520px) {
+  body #contacts .hc-p__btns { flex-direction: column; align-items: flex-start; gap: 10px; }
+}
