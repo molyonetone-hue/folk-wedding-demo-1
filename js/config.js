@@ -104,7 +104,7 @@ window.WEDDING_CONFIG = {
       heroBlessing: "With the blessings of our families",
       heroInvite: "invite you to celebrate the beginning of their forever.",
       days: "Days", hours: "Hours", minutes: "Minutes", seconds: "Seconds",
-      countdownDone: "Just married — thank you for celebrating with us.",
+      countdownDone: "Just married, thank you for celebrating with us.",
       scroll: "Scroll to begin",
       menu: "Menu", close: "Close",
       navHome: "Home", navStory: "Our Story", navCouple: "Meet Us",
@@ -120,7 +120,7 @@ window.WEDDING_CONFIG = {
       likelyTitle: "Who is more likely to…?",
       likelyHint: "Pick who you think, then see if you were right",
       eventsTitle: "The Celebrations",
-      eventsIntro: "Four days. Two homes, one temple, one very big party. Here's where we'll be — and where you'll find us.",
+      eventsIntro: "Four days. Two homes, one temple, one very big party. Here's where we'll be, and where you'll find us.",
       bridesSide: "Thivya's side", groomsSide: "Arwind's side",
       heroWelcome: "The whole family is waiting inside.",
       heroWelcomeBig: "Come in, come in!",
@@ -237,7 +237,7 @@ window.WEDDING_CONFIG = {
       heroBlessing: "எங்கள் குடும்பத்தாரின் ஆசீர்வாதத்துடன்",
       heroInvite: "தங்கள் வாழ்நாள் பயணத்தின் தொடக்கத்தைக் கொண்டாட உங்களை அன்புடன் அழைக்கிறார்கள்.",
       days: "நாட்கள்", hours: "மணி", minutes: "நிமிடம்", seconds: "விநாடி",
-      countdownDone: "திருமணம் இனிதே நடந்தது — எங்களுடன் கொண்டாடியதற்கு நன்றி.",
+      countdownDone: "திருமணம் இனிதே நடந்தது, எங்களுடன் கொண்டாடியதற்கு நன்றி.",
       scroll: "கீழே தொடருங்கள்",
       menu: "பட்டியல்", close: "மூடு",
       navHome: "முகப்பு", navStory: "எங்கள் கதை", navCouple: "எங்களைப் பற்றி",
@@ -369,8 +369,8 @@ window.WEDDING_CONFIG = {
       year: "2019",
       title: { en: "The First Meeting", ta: "முதல் சந்திப்பு" },
       text: {
-        en: "They met at a mutual friend's Deepavali open house in Subang Jaya. Arwind was explaining, with great confidence, why his amma's mutton curry was the best. Thivya disagreed. Their first conversation was an argument about food — and neither of them has backed down since.",
-        ta: "சுபாங் ஜெயாவில் ஒரு நண்பரின் தீபாவளி திறந்த இல்ல உபசரிப்பில் இருவரும் முதன்முதலில் சந்தித்தனர். தன் அம்மாவின் ஆட்டுக்கறி குழம்புதான் சிறந்தது என்று அர்விந்த் மிகுந்த நம்பிக்கையுடன் விளக்கிக் கொண்டிருந்தார். திவ்யா அதை ஒப்புக்கொள்ளவில்லை. அவர்களின் முதல் உரையாடலே சாப்பாட்டைப் பற்றிய ஒரு வாக்குவாதம்தான் — இன்றுவரை இருவரும் விட்டுக்கொடுக்கவில்லை."
+        en: "They met at a mutual friend's Deepavali open house in Subang Jaya. Arwind was explaining, with great confidence, why his amma's mutton curry was the best. Thivya disagreed. Their first conversation was an argument about food, and neither of them has backed down since.",
+        ta: "சுபாங் ஜெயாவில் ஒரு நண்பரின் தீபாவளி திறந்த இல்ல உபசரிப்பில் இருவரும் முதன்முதலில் சந்தித்தனர். தன் அம்மாவின் ஆட்டுக்கறி குழம்புதான் சிறந்தது என்று அர்விந்த் மிகுந்த நம்பிக்கையுடன் விளக்கிக் கொண்டிருந்தார். திவ்யா அதை ஒப்புக்கொள்ளவில்லை. அவர்களின் முதல் உரையாடலே சாப்பாட்டைப் பற்றிய ஒரு வாக்குவாதம்தான், இன்றுவரை இருவரும் விட்டுக்கொடுக்கவில்லை."
       },
       image: "assets/images/story-2019.jpg", shape: "landscape", focus: "40% 40%",
       alt: { en: "Arwind and Thivya laughing with plates of food at a Deepavali open house at night", ta: "இரவில் ஒரு தீபாவளி உபசரிப்பில் உணவுத் தட்டுகளுடன் சிரிக்கும் அர்விந்தும் திவ்யாவும்" }
@@ -379,8 +379,8 @@ window.WEDDING_CONFIG = {
       year: "2020",
       title: { en: "The Coffee Dates", ta: "காபி சந்திப்புகள்" },
       text: {
-        en: "A few Instagram replies turned into long conversations. Their first coffee date in Bangsar lasted five hours — one filter coffee, one iced latte, and a lot of “okay, just one more story”.",
-        ta: "சில இன்ஸ்டாகிராம் பதில்கள் நீண்ட உரையாடல்களாக மாறின. பங்சாரில் நடந்த அவர்களின் முதல் காபி சந்திப்பு ஐந்து மணி நேரம் நீடித்தது — ஒரு ஃபில்டர் காபி, ஒரு ஐஸ்டு லாட்டே, பல “சரி, இன்னும் ஒரே ஒரு கதை” தருணங்கள்."
+        en: "A few Instagram replies turned into long conversations. Their first coffee date in Bangsar lasted five hours, one filter coffee, one iced latte, and a lot of “okay, just one more story”.",
+        ta: "சில இன்ஸ்டாகிராம் பதில்கள் நீண்ட உரையாடல்களாக மாறின. பங்சாரில் நடந்த அவர்களின் முதல் காபி சந்திப்பு ஐந்து மணி நேரம் நீடித்தது, ஒரு ஃபில்டர் காபி, ஒரு ஐஸ்டு லாட்டே, பல “சரி, இன்னும் ஒரே ஒரு கதை” தருணங்கள்."
       },
       image: "assets/images/story-2020.jpg", shape: "portrait", focus: "45% 30%",
       alt: { en: "Arwind and Thivya smiling together at a café table with a latte", ta: "ஒரு லாட்டேயுடன் கஃபே மேசையில் புன்னகைக்கும் அர்விந்தும் திவ்யாவும்" }
@@ -389,8 +389,8 @@ window.WEDDING_CONFIG = {
       year: "2022",
       title: { en: "Two Families, One Big Story", ta: "இரு குடும்பங்கள், ஒரு பெரிய கதை" },
       text: {
-        en: "Family visits turned into dinners, celebrations and Deepavali gatherings — along with many, many questions about when they were getting married.",
-        ta: "குடும்பச் சந்திப்புகள் விருந்துகளாகவும், கொண்டாட்டங்களாகவும், தீபாவளி ஒன்றுகூடல்களாகவும் மாறின — கூடவே “எப்போது கல்யாணம்?” என்ற எண்ணற்ற கேள்விகளும்."
+        en: "Family visits turned into dinners, celebrations and Deepavali gatherings, along with many, many questions about when they were getting married.",
+        ta: "குடும்பச் சந்திப்புகள் விருந்துகளாகவும், கொண்டாட்டங்களாகவும், தீபாவளி ஒன்றுகூடல்களாகவும் மாறின, கூடவே “எப்போது கல்யாணம்?” என்ற எண்ணற்ற கேள்விகளும்."
       },
       image: "assets/images/story-2022.jpg", shape: "landscape", focus: "50% 45%",
       alt: { en: "Both families gathered for Deepavali in silk and veshti, with oil lamps and a kolam in front", ta: "அகல் விளக்குகளும் கோலமும் முன்னிருக்க, பட்டும் வேட்டியுமாகத் தீபாவளிக்கு ஒன்றுகூடிய இரு குடும்பங்கள்" }
@@ -410,7 +410,7 @@ window.WEDDING_CONFIG = {
       title: { en: "The Kalyanam", ta: "கல்யாணம்" },
       text: {
         en: "After years of laughter, long drives, food debates and family gatherings, they're getting married.",
-        ta: "பல வருடச் சிரிப்பு, நீண்ட பயணங்கள், சாப்பாட்டு விவாதங்கள், குடும்ப ஒன்றுகூடல்களுக்குப் பிறகு — இதோ, அவர்கள் திருமணம் செய்துகொள்கிறார்கள்."
+        ta: "பல வருடச் சிரிப்பு, நீண்ட பயணங்கள், சாப்பாட்டு விவாதங்கள், குடும்ப ஒன்றுகூடல்களுக்குப் பிறகு, இதோ, அவர்கள் திருமணம் செய்துகொள்கிறார்கள்."
       },
       image: "assets/images/story-2027.jpg", shape: "portrait", focus: "55% 55%",
       alt: { en: "Arwind and Thivya in traditional dress sharing tea on the steps of an old house, a kolam drawn in front", ta: "பாரம்பரிய உடையில் பழைய வீட்டின் படிகளில் தேநீர் அருந்தும் அர்விந்தும் திவ்யாவும்; முன்னே ஒரு கோலம்" }
@@ -429,8 +429,8 @@ window.WEDDING_CONFIG = {
       cutout: "assets/images/cutout-arwind.png",   // background removed, pasted on the bio-data sheet
       stamp: { en: "Approved by Thivya's Amma", ta: "திவ்யாவின் அம்மா ஒப்புதல்" },
       bio: {
-        en: "Product manager by day, self-appointed food critic by night. Claims he doesn't care about wedding planning — yet has strong opinions on the entrance song, the biryani and the font on the invitation.",
-        ta: "பகலில் புராடக்ட் மேனேஜர், இரவில் தானே நியமித்துக்கொண்ட உணவு விமர்சகர். திருமண ஏற்பாடுகளில் அக்கறை இல்லை என்று சொல்வார் — ஆனால் நுழைவுப் பாடல், பிரியாணி, அழைப்பிதழின் எழுத்துரு பற்றி உறுதியான கருத்துகள் உண்டு."
+        en: "Product manager by day, self-appointed food critic by night. Claims he doesn't care about wedding planning, yet has strong opinions on the entrance song, the biryani and the font on the invitation.",
+        ta: "பகலில் புராடக்ட் மேனேஜர், இரவில் தானே நியமித்துக்கொண்ட உணவு விமர்சகர். திருமண ஏற்பாடுகளில் அக்கறை இல்லை என்று சொல்வார், ஆனால் நுழைவுப் பாடல், பிரியாணி, அழைப்பிதழின் எழுத்துரு பற்றி உறுதியான கருத்துகள் உண்டு."
       },
       favourites: [
         { en: "Filter coffee", ta: "ஃபில்டர் காபி" },
@@ -446,8 +446,8 @@ window.WEDDING_CONFIG = {
       cutout: "assets/images/cutout-thivya.png",
       stamp: { en: "Approved by Arwind's Paati", ta: "அர்விந்தின் பாட்டி ஒப்புதல்" },
       bio: {
-        en: "Brand marketer, saree archivist and keeper of The Spreadsheet. Has a moodboard for the moodboards and hundreds of saved references — every single one of them essential.",
-        ta: "பிராண்ட் மார்க்கெட்டர், புடவைக் காப்பாளர், “அந்த ஸ்ப்ரெட்ஷீட்டின்” பொறுப்பாளர். மூட்போர்டுகளுக்கே ஒரு மூட்போர்டு வைத்திருப்பவர்; சேமித்த நூற்றுக்கணக்கான குறிப்புகள் — ஒவ்வொன்றும் அவசியமானது."
+        en: "Brand marketer, saree archivist and keeper of The Spreadsheet. Has a moodboard for the moodboards and hundreds of saved references, every single one of them essential.",
+        ta: "பிராண்ட் மார்க்கெட்டர், புடவைக் காப்பாளர், “அந்த ஸ்ப்ரெட்ஷீட்டின்” பொறுப்பாளர். மூட்போர்டுகளுக்கே ஒரு மூட்போர்டு வைத்திருப்பவர்; சேமித்த நூற்றுக்கணக்கான குறிப்புகள், ஒவ்வொன்றும் அவசியமானது."
       },
       favourites: [
         { en: "Iced latte", ta: "ஐஸ்டு லாட்டே" },
@@ -495,10 +495,10 @@ window.WEDDING_CONFIG = {
       shortDate: { day: "04", month: { en: "Feb", ta: "பிப்" }, weekday: { en: "Thu", ta: "வியா" } },
       name: { en: "Amma Nalungu", ta: "அம்மா நலுங்கு" },
       description: {
-        en: "An intimate evening led by the mothers — turmeric, sandalwood, kumkumam and the first blessings of the wedding week. Expect laughter, a few happy tears and far too much food.",
-        ta: "அம்மாக்கள் முன்னின்று நடத்தும் ஒரு நெருக்கமான மாலை — மஞ்சள், சந்தனம், குங்குமத்துடன் திருமண வாரத்தின் முதல் ஆசீர்வாதங்கள். சிரிப்பு, சில ஆனந்தக் கண்ணீர், அளவுக்கு மீறிய சாப்பாடு நிச்சயம்."
+        en: "An intimate evening led by the mothers, turmeric, sandalwood, kumkumam and the first blessings of the wedding week. Expect laughter, a few happy tears and far too much food.",
+        ta: "அம்மாக்கள் முன்னின்று நடத்தும் ஒரு நெருக்கமான மாலை, மஞ்சள், சந்தனம், குங்குமத்துடன் திருமண வாரத்தின் முதல் ஆசீர்வாதங்கள். சிரிப்பு, சில ஆனந்தக் கண்ணீர், அளவுக்கு மீறிய சாப்பாடு நிச்சயம்."
       },
-      dressCode: { en: "Bright traditional wear — yellow is always welcome", ta: "பளிச்சென்ற பாரம்பரிய உடை — மஞ்சளுக்கு எப்போதும் வரவேற்பு" },
+      dressCode: { en: "Bright traditional wear, yellow is always welcome", ta: "பளிச்சென்ற பாரம்பரிய உடை, மஞ்சளுக்கு எப்போதும் வரவேற்பு" },
       sides: [
         { side: "bride", time: "6:30 PM", timeTa: "மாலை 6:30",
           venue: { en: "Thivya's Family Home, Klang", ta: "திவ்யாவின் குடும்ப இல்லம், கிள்ளான்" },
@@ -676,7 +676,7 @@ window.WEDDING_CONFIG = {
   // A simple list of ideas. Icons: coffee, pan, dice, plate, luggage, camera, projector, speaker.
   wishlist: {
     items: [
-      { icon: "coffee", art: "assets/images/wishlist/coffee.jpg", name: { en: "Filter coffee set", ta: "ஃபில்டர் காபி செட்" }, note: { en: "Brass, please. Arwind insists.", ta: "பித்தளை வேண்டும் — அர்விந்தின் வற்புறுத்தல்." } },
+      { icon: "coffee", art: "assets/images/wishlist/coffee.jpg", name: { en: "Filter coffee set", ta: "ஃபில்டர் காபி செட்" }, note: { en: "Brass, please. Arwind insists.", ta: "பித்தளை வேண்டும், அர்விந்தின் வற்புறுத்தல்." } },
       { icon: "pan", art: "assets/images/wishlist/pan.jpg", name: { en: "Cast-iron cookware", ta: "வார்ப்பிரும்புப் பாத்திரங்கள்" }, note: { en: "For the dosa debates.", ta: "தோசை விவாதங்களுக்காக." } },
       { icon: "dice", art: "assets/images/wishlist/dice.png", name: { en: "Board game collection", ta: "பலகை விளையாட்டுத் தொகுப்பு" }, note: { en: "Competitive. Very.", ta: "போட்டி மிகுந்தது. மிகவும்." } },
       { icon: "plate", art: "assets/images/wishlist/plate.jpg", name: { en: "Dinnerware set", ta: "உணவுப் பாத்திரத் தொகுப்பு" }, note: { en: "For the many, many guests.", ta: "எண்ணற்ற விருந்தினர்களுக்காக." } },

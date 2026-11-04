@@ -122,7 +122,7 @@
           '<img src="' + esc(m.image) + '" alt="' + esc(t(m.alt)) + '" width="' + (wide ? 1200 : 900) + '" height="' + (wide ? 750 : 1125) + '" loading="lazy" decoding="async">' +
           '<figcaption class="moment__cap" aria-hidden="true">' + esc(m.year) + '</figcaption></figure>' +
         '<div class="moment__body">' +
-          '<h3 class="moment__title"><span class="sr-only">' + esc(m.year) + ' — </span>' + esc(t(m.title)) + '</h3>' +
+          '<h3 class="moment__title"><span class="sr-only">' + esc(m.year) + ', </span>' + esc(t(m.title)) + '</h3>' +
           '<p class="moment__text">' + esc(t(m.text)) + '</p>' +
         '</div></li>';
     }).join('');
@@ -330,7 +330,7 @@
       return '<a href="#ev-' + esc(ev.id) + '" data-day="' + esc(ev.id) + '">' +
         '<span class="days__d">' + esc(ev.shortDate.day) + '</span>' +
         '<span class="days__w">' + esc(t(ev.shortDate.weekday)) + '</span>' +
-        '<span class="sr-only"> — ' + esc(t(ev.name)) + '</span></a>';
+        '<span class="sr-only">, ' + esc(t(ev.name)) + '</span></a>';
     }).join('');
 
     // Each celebration is a pair of postage stamps (picture + details), franked with a postmark
@@ -363,7 +363,6 @@
           '</svg>' +
         '</div></article>';
     }).join('');
-    $$('#event-list .stamp--text').forEach(function (el) { fadeWords(el); });
     observeFades('#event-list .stampset');
     observeDays();
   }
