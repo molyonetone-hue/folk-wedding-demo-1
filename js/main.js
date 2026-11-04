@@ -175,8 +175,9 @@
     var mm = String(Number(d.toLocaleString('en-GB', Object.assign({ month: 'numeric' }, tz))));
     var yy = d.toLocaleString('en-GB', Object.assign({ year: 'numeric' }, tz));
     $('#cal-big').innerHTML = '<span>' + dd + '</span><i>-</i><span>' + mm + '</span><i>-</i><span>' + yy + '</span>';
-    $('#cal-wk').textContent = part({ month: 'long' });
     $('#cal-wd').textContent = part({ weekday: 'long' });
+    $('#cal-dmy').textContent = part({ day: 'numeric', month: 'long', year: 'numeric' });
+    $('#save-date').onclick = saveWeddingDate;
     // the week's events, set like the timings table on a daily calendar
     $('#cal-events').innerHTML = (C.events || []).map(function (ev) {
       var v = ev.venue || (ev.sides && ev.sides[0]) || {};
@@ -193,6 +194,37 @@
     }).join('');
   }
 
+
+  // "Save the wedding date": a standard .ics file with the Kalyanam, in Malaysia time (UTC+8).
+  // Opens in Apple Calendar, Google Calendar, Outlook and most phone calendars.
+  function saveWeddingDate() {
+    var start = new Date(C.weddingDateISO);
+    if (isNaN(start)) return;
+    var kal = (C.events || []).filter(function (e) { return e.venue && e.tone === 'kalyanam'; })[0];
+    var venue = kal && kal.venue ? t(kal.venue.venue) : '';
+    var couple = t(C.couple.partner1.first) + ' & ' + t(C.couple.partner2.first);
+    var end = new Date(start.getTime() + 4 * 60 * 60 * 1000); // about four hours for the ceremony
+    var utc = function (d) { return d.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}Z$/, 'Z'); };
+    var ics = function (v) { return String(v || '').replace(/\\/g, '\\\\').replace(/;/g, '\;').replace(/,/g, '\\,').replace(/\r?\n/g, '\\n'); };
+    var lines = [
+      'BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//ONETONE Studio//Wedding Invitation//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH',
+      'BEGIN:VEVENT',
+      'UID:kalyanam-2027-02-06@onetone-heritage',
+      'DTSTAMP:' + utc(new Date()),
+      'DTSTART:' + utc(start),
+      'DTEND:' + utc(end),
+      'SUMMARY:' + ics('The Kalyanam: ' + couple),
+      'LOCATION:' + ics(venue),
+      'DESCRIPTION:' + ics(kal ? t(kal.description) : ''),
+      'END:VEVENT', 'END:VCALENDAR'
+    ];
+    var blob = new Blob([lines.join('\r\n')], { type: 'text/calendar;charset=utf-8' });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url; a.download = 'kalyanam-wedding-2027-02-06.ics';
+    document.body.appendChild(a); a.click();
+    setTimeout(function () { URL.revokeObjectURL(url); a.remove(); }, 1000);
+  }
 
   // Each partner as an old-school "marriage bio-data" sheet, studio photo clipped on
   function renderProfiles() {

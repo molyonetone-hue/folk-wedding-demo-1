@@ -4209,3 +4209,45 @@ body #contacts .hc-p__num { margin-top: 1px; line-height: 1.3; }
 /* name, relation and number: one even rhythm, so they read as one person */
 body #contacts .hc-p__info { display: flex; flex-direction: column; gap: 4px; }
 body #contacts .hc-p__info > p { margin: 0; }
+
+/* ---------- 130 CALENDAR: REFERENCE LAYOUT (BIG DATE, DAY | TIME | VENUE ROW, COUNTDOWN LINE, FOUR DAYS TABLE + RASI, SAVE BUTTON) ---------- */
+body .calendar .cal-board .cal__sheet { outline: 1.5px solid #18181c; outline-offset: -12px; }
+body .calendar .cal-board .cal__big { margin: 0; line-height: .9; letter-spacing: .01em; }
+body .calendar .cal-board .cal__body { gap: 0; padding-top: 0; }
+body .calendar .cal-board .cal__info { display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; border-top: 2px solid #18181c; border-bottom: 2px solid #18181c; }
+body .calendar .cal-board .cal__info > div { display: grid; justify-items: center; align-content: center; gap: 4px; padding: 14px 10px; text-align: center; min-height: 118px; }
+body .calendar .cal-board .cal__info > div + div { border-left: 2px solid #18181c; }
+body .calendar .cal-board .cal__wd-big { font-family: "Anton", sans-serif; font-weight: 400; font-size: clamp(1.6rem, 4.2vw, 2.5rem); letter-spacing: .03em; text-transform: uppercase; line-height: 1; color: #18181c; }
+body .calendar .cal-board .cal__dmy { font-family: var(--f-display); font-style: italic; font-size: clamp(.95rem, 1.8vw, 1.2rem); color: #18181c; }
+body .calendar .cal-board .cal__info-time b { font-family: "Anton", sans-serif; font-weight: 400; font-size: clamp(1.5rem, 4vw, 2.3rem); line-height: 1; color: #18181c; }
+body .calendar .cal-board .cal__info-time .cal__k, body .calendar .cal-board .cal__info-place .cal__k { font-family: var(--f-display); font-style: italic; font-size: clamp(.9rem, 1.6vw, 1.1rem); color: #18181c; letter-spacing: .01em; }
+body .calendar .cal-board .cal__info-place #cal-venue { font-family: var(--f-sans); font-size: clamp(.82rem, 1.5vw, 1rem); line-height: 1.35; color: #18181c; }
+body .calendar .cal-board .cal__info-place .cal__k { display: none; }
+body .calendar .cal-board .cal__count { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: clamp(8px, 1.6vw, 18px); margin: 0; padding: 14px 8px; border-bottom: 2px solid #18181c; font-family: var(--f-sans); font-size: clamp(.8rem, 1.5vw, 1rem); font-weight: 600; letter-spacing: .14em; color: #18181c; }
+body .calendar .cal-board .cal__count-num b { font-family: "Anton", sans-serif; font-weight: 400; font-size: clamp(1.6rem, 4.4vw, 2.5rem); letter-spacing: .02em; color: #18181c; margin-right: 2px; }
+body .calendar .cal-board .cal__count-num { display: inline-flex; align-items: baseline; gap: 4px; }
+body .calendar .cal-board .cal__dot { font-size: 1.4rem; line-height: 1; }
+body .calendar .cal-board .cal__orn { display: inline-block; width: clamp(26px, 3.4vw, 36px); height: clamp(26px, 3.4vw, 36px); background: url("../assets/images/home/kolam-gold.png") center / contain no-repeat; filter: brightness(0); }
+body .calendar .cal-board .cal__table-title { margin: 14px 0 6px; font-family: var(--f-display); font-style: italic; font-weight: 700; font-size: clamp(1.25rem, 2.6vw, 1.7rem); color: #18181c; display: flex; align-items: center; gap: 12px; }
+body .calendar .cal-board .cal__table-title::after { content: ""; flex: 1; height: 2px; background: #18181c; }
+body .calendar .cal-board .cal__table { width: 100%; border-collapse: collapse; font-family: var(--f-display); color: #18181c; }
+body .calendar .cal-board .cal__table td { padding: 9px 6px; border-bottom: 1px solid #18181c; font-size: clamp(.92rem, 1.7vw, 1.05rem); vertical-align: middle; text-align: left; }
+body .calendar .cal-board .cal__table td:first-child { font-family: "Anton", sans-serif; font-size: clamp(1rem, 2vw, 1.2rem); letter-spacing: .02em; white-space: nowrap; width: 1%; }
+body .calendar .cal-board .cal__table td:nth-child(2) { border-left: 2px solid #18181c; padding-left: 12px; }
+body .calendar .cal-board .cal__table td:last-child { text-align: right; font-weight: 700; white-space: nowrap; }
+body .calendar .cal-board .cal__table tr:last-child td { border-bottom: 0; }
+body .calendar .cal-board .cal__side { border: 2px solid #18181c; }
+body .calendar .cal-board .cal__side-title { font-family: var(--f-display); font-style: italic; font-weight: 700; background: none; color: #18181c; text-align: left; font-size: clamp(1.25rem, 2.6vw, 1.7rem); padding: 10px 12px 4px; letter-spacing: 0; }
+body .calendar .cal-board .cal__forecast li { font-size: .9rem; border-bottom: 1px solid #18181c; }
+body .calendar .cal-board .cal__forecast b { color: #18181c; font-weight: 700; }
+
+/* Save the wedding date: maroon, white text, under the board */
+body .calendar .save-date { display: flex; justify-content: center; margin-top: clamp(26px, 4vw, 40px); position: relative; z-index: 2; }
+body .calendar .save-date__btn { min-height: 50px; padding: 0 30px; border: 0; border-radius: 999px; background: #6E1A1E; color: #FFFFFF; font-family: var(--f-sans); font-size: 1rem; font-weight: 600; letter-spacing: .04em; cursor: pointer; box-shadow: 0 12px 22px -12px rgba(60, 4, 10, .7); transition: background .2s ease, transform .2s ease; }
+body .calendar .save-date__btn:hover, body .calendar .save-date__btn:focus-visible { background: #4F1216; transform: translateY(-2px); }
+body .calendar .save-date__btn:focus-visible { outline: 2px solid #6E1A1E; outline-offset: 4px; }
+html[lang="ta"] body .calendar .cal-board .cal__table-title { font-family: var(--f-display); }
+@media (max-width: 760px) {
+  body .calendar .cal-board .cal__info > div { padding: 10px 6px; min-height: 0; }
+  body .calendar .cal-board .cal__info-place #cal-venue { font-size: .72rem; }
+}

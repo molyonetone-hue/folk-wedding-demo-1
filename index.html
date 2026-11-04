@@ -25,7 +25,7 @@
 
   <link rel="preload" as="image" href="assets/images/home/entrance-wide.jpg" media="(min-aspect-ratio: 4/5)">
   <link rel="preload" as="image" href="assets/images/home/entrance-tall.jpg" media="(max-aspect-ratio: 4/5)">
-  <link rel="stylesheet" href="css/style.css?v=127">
+  <link rel="stylesheet" href="css/style.css?v=129">
 </head>
 <body>
 
@@ -214,7 +214,7 @@
       <div class="cal-hero" data-reveal>
         <div class="cal-hero__text">
           <p class="savedate-line" data-i18n="saveDateLine">Mark your calendars!</p>
-          <p class="cal-hero__sub" data-i18n="saveDateSub">Four days of celebrations are coming. Pop them in your diary now!</p>
+          <p class="cal-hero__sub" data-i18n="saveDateSub">Four days of celebrations. One date to remember.</p>
         </div>
       </div>
       <div class="cal-board" data-reveal>
@@ -228,17 +228,14 @@
         <span class="cal__stack" aria-hidden="true"></span>
         <div class="cal__sheet" id="countdown" role="timer" aria-live="off">
           <p class="cal__big" id="cal-big" aria-hidden="true">06-2-2027</p>
-          <p class="cal__quote" data-i18n="calQuote"></p>
           <div class="cal__body">
-            <div class="cal__boxes">
-              <div class="cal__box"><span class="cal__k" data-i18n="calDays">Days to go</span><b class="cal__n" data-cd="d">000</b></div>
-              <div class="cal__box cal__box--mid"><b class="cal__wk" id="cal-wk">February</b><span class="cal__wd" id="cal-wd">Saturday</span></div>
-              <div class="cal__box"><span class="cal__k" data-i18n="calLeft">Countdown</span><b class="cal__hms"><span data-cd="h">00</span>:<span data-cd="m">00</span>:<span data-cd="s">00</span></b></div>
+            <div class="cal__info">
+              <div class="cal__info-day"><b class="cal__wd-big" id="cal-wd">Saturday</b><span class="cal__dmy" id="cal-dmy"></span></div>
+              <div class="cal__info-time"><span class="cal__k" data-i18n="calMuhurtham">The Kalyanam</span><b id="cal-muhurtham">9:00 AM</b></div>
+              <div class="cal__info-place"><span class="cal__k" data-i18n="venue">Venue</span><span id="cal-venue"></span></div>
             </div>
-            <div class="cal__neram">
-              <div class="cal__neram-time"><span class="cal__k" data-i18n="calMuhurtham">Kalyanam muhurtham</span><b id="cal-muhurtham">9:00 AM</b></div>
-              <div class="cal__neram-place"><span class="cal__k" data-i18n="venue">Venue</span><span id="cal-venue"></span></div>
-            </div>
+            <p class="cal__count"><span class="cal__orn" aria-hidden="true"></span><span class="cal__count-num"><b data-cd="d">000</b> DAYS</span><span class="cal__dot" aria-hidden="true">·</span><span class="cal__count-num"><b data-cd="h">00</b> HRS</span><span class="cal__dot" aria-hidden="true">·</span><span class="cal__count-num"><b data-cd="m">00</b> MIN</span><span hidden data-cd="s">00</span><span class="cal__orn" aria-hidden="true"></span></p>
+            <p class="cal__table-title" data-i18n="calFourDays">Four days, together</p>
             <table class="cal__table" id="cal-events"></table>
           </div>
           <span class="cal__slip" aria-hidden="true" data-i18n="calSlip">Slip No. 37 · Eco Wt</span>
@@ -249,6 +246,9 @@
         </div>
         <p class="countdown__done" id="countdown-done" hidden data-i18n="countdownDone"></p>
       </div>
+      </div>
+      <div class="save-date">
+        <button type="button" class="save-date__btn" id="save-date" data-i18n="saveWeddingDate">Save the wedding date</button>
       </div>
     </div>
   </section>
@@ -545,9 +545,9 @@
      ========================================================= -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
-<script src="js/config.js?v=127" defer></script>
-<script src="js/upload.js?v=127" defer></script>
-<script src="js/main.js?v=127" defer></script>
+<script src="js/config.js?v=129" defer></script>
+<script src="js/upload.js?v=129" defer></script>
+<script src="js/main.js?v=129" defer></script>
 
 <!-- Safety net: if main.js fails to start, never leave guests stuck behind the intro -->
 <script>
