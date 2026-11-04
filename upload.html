@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Share your photos · Arwind &amp; Thivya</title>
+  <meta name="description" content="Share your wedding photos and videos with Arwind & Thivya. No sign-in needed.">
+  <meta name="theme-color" content="#602C30">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23602C30'/%3E%3Cpath d='M16 52V30Q16 14 32 10Q48 14 48 30V52' fill='none' stroke='%23E2AD38' stroke-width='3'/%3E%3Ccircle cx='32' cy='34' r='6' fill='none' stroke='%23E2AD38' stroke-width='3'/%3E%3C/svg%3E">
+  <script>document.documentElement.classList.replace('no-js','js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@400;500;600&family=Noto+Sans+Tamil:wght@400;500;600&family=Noto+Serif+Tamil:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="up-page">
+
+<!-- =========================================================
+     GUEST PHOTO UPLOAD — opened from the QR code / Share Photos.
+     All text comes from js/config.js; sending is handled by js/upload.js.
+     ========================================================= -->
+<header class="up-top">
+  <a class="topbar__mark" href="index.html#memories"><span class="topbar__mono" data-config="couple.monogram">A · T</span></a>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" class="lang__btn" data-lang="en" aria-pressed="true">EN</button>
+    <button type="button" class="lang__btn lang__btn--ta" data-lang="ta" aria-pressed="false" lang="ta">தமிழ்</button>
+  </div>
+</header>
+
+<main class="up-main">
+  <div class="up-card">
+    <svg class="up-arch" viewBox="0 0 120 150" aria-hidden="true">
+      <path d="M10 150 V70 Q10 22 60 8 Q110 22 110 70 V150" fill="none" stroke="currentColor" stroke-width="1"/>
+      <path d="M20 150 V74 Q20 34 60 20 Q100 34 100 74 V150" fill="none" stroke="currentColor" stroke-width=".6"/>
+      <circle cx="50" cy="96" r="14" fill="none" stroke="currentColor"/><circle cx="70" cy="96" r="14" fill="none" stroke="currentColor"/>
+    </svg>
+    <p class="up-names"><span data-couple="partner1">Arwind</span> <em>&amp;</em> <span data-couple="partner2">Thivya</span></p>
+    <h1 class="up-title" data-i18n="uploadTitle">Share your photos</h1>
+    <p class="up-intro" data-i18n="uploadIntro"></p>
+
+    <!-- The upload form is built here by js/upload.js -->
+    <div data-uploader></div>
+
+    <a class="up-back" href="index.html#memories" data-i18n="backToSite">Back to the wedding website</a>
+  </div>
+  <p class="footer__credit up-credit"><span data-i18n="madeBy">Thoughtfully designed by</span> <a id="studio-link" href="https://onetone.my" target="_blank" rel="noopener">Onetone Studio</a></p>
+</main>
+
+<noscript><p class="up-noscript">Please enable JavaScript to upload photos.</p></noscript>
+
+<script src="js/config.js" defer></script>
+<script src="js/upload.js" defer></script>
+</body>
+</html>
