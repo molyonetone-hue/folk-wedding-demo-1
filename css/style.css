@@ -3856,6 +3856,12 @@ html[lang="ta"] .stamp--contact .help-side { font-style: normal; letter-spacing:
   .stamp--contact .stamp__face::before { background-size: 124% auto !important; background-position: 50% 100% !important; }
 }
 
+/* ---------- 111 NEED HELP: NO ARCH FRAME, THE FIGURES STAND FREE WITH A SOFT CREAM OUTLINE ---------- */
+.stamp--contact .stamp__face::before { background-color: transparent !important; border-radius: 0 !important; box-shadow: none !important;
+  filter: drop-shadow(0 0 1.5px rgba(255, 244, 222, .95)) drop-shadow(0 0 1px rgba(255, 244, 222, .9)) drop-shadow(0 10px 14px rgba(0, 0, 0, .45)); }
+@media (min-width: 640px) { .stamp--contact .stamp__face::before { width: 190px !important; right: 14px !important; background-size: 175% auto !important; background-position: 50% 96% !important; } .help-col.stamp .stamp__face { padding-right: 214px !important; } }
+@media (max-width: 639px) { .stamp--contact .stamp__face::before { width: 92px !important; height: 132px !important; top: -34px !important; right: 6px !important; background-size: contain !important; background-position: 50% 100% !important; } }
+
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
