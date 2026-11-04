@@ -4164,3 +4164,18 @@ body #contacts a.hc-btn:focus-visible { outline: 2px solid #FFFFFF; outline-offs
   body #contacts .hc-p__btns { gap: 14px; }
   body #contacts a.hc-btn { font-size: .82rem; }
 }
+
+/* ---------- 128 NEED HELP: PILL BUTTONS (WHITE CALL, GREEN WHATSAPP, ICON AND LABEL INSIDE) ---------- */
+body #contacts a.hc-btn { flex-direction: row; align-items: center; justify-content: center; gap: 8px; min-width: 0; height: 46px; padding: 0 20px 0 14px; box-sizing: border-box; border-radius: 999px; font-family: var(--f-sans); font-size: .95rem; font-weight: 600; letter-spacing: .02em; white-space: nowrap; text-decoration: none; box-shadow: 0 10px 20px -10px rgba(0, 0, 0, .6); transition: transform .2s ease, box-shadow .2s ease; }
+body #contacts a.hc-btn--call { background: #FFFFFF; color: #6E1A1E; }
+body #contacts a.hc-btn--wa { background: #25D366; color: #FFFFFF; }
+body #contacts a.hc-btn:hover, body #contacts a.hc-btn:focus-visible { transform: translateY(-2px); box-shadow: 0 14px 24px -10px rgba(0, 0, 0, .65); }
+body #contacts a.hc-btn--wa:hover, body #contacts a.hc-btn--wa:focus-visible { background: #1EBE5A; }
+body #contacts .hc-btn__ring { display: inline-grid; place-items: center; width: 22px; height: 22px; background: transparent !important; color: inherit !important; border-radius: 0; filter: none; }
+body #contacts .hc-btn__ring svg { width: 18px; height: 18px; }
+body #contacts .hc-btn__label { display: inline; }
+body #contacts .hc-p__btns { flex-direction: column; align-items: stretch; gap: 10px; flex-wrap: nowrap; }
+body #contacts a.hc-btn { width: 136px; }
+@media (max-width: 520px) {
+  body #contacts a.hc-btn { height: 42px; padding: 0 16px 0 12px; font-size: .88rem; gap: 6px; }
+}
