@@ -321,7 +321,7 @@
             '<div class="hc-p__info">' +
               '<p class="hc-p__name">' + esc(t(p.name)) + '</p>' +
               '<p class="hc-p__rel">' + esc(t(p.relation)) + '</p>' +
-              '<p class="hc-p__num">' + esc(p.phone) + '</p>' +
+              '<p class="hc-p__num">' + esc(String(p.phone || '').replace(/^\+\d+\s*/, '')) + '</p>' +
             '</div>' +
             '<div class="hc-p__btns">' +
               '<a class="hc-btn hc-btn--call" href="tel:+' + digits + '" aria-label="' + esc(ui('call') + ' ' + t(p.name)) + '"><span class="hc-btn__ring hc-btn__ring--call">' + BRAND.call + '</span><span class="hc-btn__label">' + esc(ui('call')) + '</span></a>' +

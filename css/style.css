@@ -4205,3 +4205,7 @@ body #contacts a.hc-btn .hc-btn__ring svg { width: 17px; height: 17px; }
 /* the relationship and the number read as one block with the name above them */
 body #contacts .hc-p__rel { margin-top: 0; line-height: 1.3; }
 body #contacts .hc-p__num { margin-top: 1px; line-height: 1.3; }
+
+/* name, relation and number: one even rhythm, so they read as one person */
+body #contacts .hc-p__info { display: flex; flex-direction: column; gap: 4px; }
+body #contacts .hc-p__info > p { margin: 0; }
