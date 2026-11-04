@@ -4179,3 +4179,19 @@ body #contacts a.hc-btn { width: 136px; }
 @media (max-width: 520px) {
   body #contacts a.hc-btn { height: 42px; padding: 0 16px 0 12px; font-size: .88rem; gap: 6px; }
 }
+
+/* ---------- 129 NEED HELP: BUTTONS UNDER EACH NUMBER, SIDE BY SIDE (OUTLINE CALL, GREEN WHATSAPP) ---------- */
+body #contacts .hc-list { gap: 32px; }
+body #contacts .hc-p { grid-template-columns: minmax(0, 1fr); row-gap: 0; align-items: start; }
+body #contacts .hc-p__info { text-align: left; }
+body #contacts .hc-p__btns { display: flex; flex-direction: row; align-items: center; justify-content: flex-start; gap: 11px; margin-top: 14px; }
+body #contacts a.hc-btn { width: auto; height: 46px; padding: 0 18px; font-size: .95rem; }
+body #contacts a.hc-btn--call { background: transparent; color: #FFFFFF; border: 1.5px solid #FFFFFF; box-shadow: none; }
+body #contacts a.hc-btn--call:hover, body #contacts a.hc-btn--call:focus-visible { background: rgba(255, 255, 255, .12); }
+body #contacts a.hc-btn--wa { border: 1.5px solid #25D366; }
+body #contacts a.hc-btn .hc-btn__ring { width: 20px; height: 20px; }
+body #contacts a.hc-btn .hc-btn__ring svg { width: 17px; height: 17px; }
+@media (max-width: 520px) {
+  body #contacts a.hc-btn { height: 46px; padding: 0 16px; font-size: .9rem; }
+  body #contacts .hc-p__btns { gap: 10px; }
+}
