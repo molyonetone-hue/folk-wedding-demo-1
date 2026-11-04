@@ -4360,3 +4360,8 @@ body .calendar .cal-board .cal__orn { width: clamp(30px, 4vw, 42px); height: cla
 body .calendar .cal-board .cal__count { flex-wrap: nowrap; }
 body .calendar .cal-board .cal__count-num b { font-size: clamp(2.2rem, 4.4vw, 3.2rem); }
 body .calendar .cal-board .cal__orn { width: clamp(24px, 3vw, 32px); height: clamp(24px, 3vw, 32px); }
+
+/* ---------- 137 CALENDAR: COMPACT TEXT USES THE CELEBRATION DATE FONT (INTER 600) ---------- */
+body .calendar .cal-board .cal__info-place #cal-venue { font-family: var(--f-sans); font-weight: 600; font-size: clamp(.9rem, 1.6vw, 1.05rem); letter-spacing: .01em; line-height: 1.35; }
+body .calendar .cal-board .cal__count-num { font-family: var(--f-sans); font-weight: 600; text-transform: uppercase; letter-spacing: .2em; font-size: clamp(.7rem, 1.1vw, .8rem); }
+body .calendar .cal-board .cal__count-num b { font-family: "Anton", sans-serif; font-weight: 400; letter-spacing: .02em; }
