@@ -302,6 +302,12 @@
   };
 
   // Family contacts: Call (tel:) and WhatsApp (wa.me) links from each phone number
+  // Malaysian numbers are shown in local form with a leading 0 (e.g. 012-000 0001); the country code stays in the links
+  function localNumber(v) {
+    var n = String(v || '').replace(/^\+\d+\s*/, '').trim();
+    return n.charAt(0) === '0' ? n : '0' + n;
+  }
+
   // Open layout: white chalk figures beside each family, a pulli kolam between them. No cards.
   function renderContacts() {
     var sides = C.contacts || [];
@@ -321,7 +327,7 @@
             '<div class="hc-p__info">' +
               '<p class="hc-p__name">' + esc(t(p.name)) + '</p>' +
               '<p class="hc-p__rel">' + esc(t(p.relation)) + '</p>' +
-              '<p class="hc-p__num">' + esc(String(p.phone || '').replace(/^\+\d+\s*/, '')) + '</p>' +
+              '<p class="hc-p__num">' + esc(localNumber(p.phone)) + '</p>' +
             '</div>' +
             '<div class="hc-p__btns">' +
               '<a class="hc-btn hc-btn--call" href="tel:+' + digits + '" aria-label="' + esc(ui('call') + ' ' + t(p.name)) + '"><span class="hc-btn__ring hc-btn__ring--call">' + BRAND.call + '</span><span class="hc-btn__label">' + esc(ui('call')) + '</span></a>' +
