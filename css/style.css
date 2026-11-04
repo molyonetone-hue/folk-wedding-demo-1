@@ -3890,6 +3890,43 @@ html[lang="ta"] .stamp--contact .help-side { font-style: normal; letter-spacing:
   .help-card .help-col.stamp .stamp__face { padding-left: 30px !important; padding-right: 30px !important; }
 }
 
+/* ---------- 116 NEED HELP: FULL MOCKUP LOOK (TEMPLE HALL BACKGROUND, TORAN, PHONE ABOVE THE HEADING, GOLD-CORNERED GLASS CARDS, FIGURES BESIDE THE CARDS) ---------- */
+#contacts.help { padding-top: clamp(150px, 16vw, 200px) !important;
+  background: linear-gradient(rgba(54, 8, 12, .52), rgba(54, 8, 12, .26) 42%, rgba(54, 8, 12, .7)), url("../assets/images/home/help-bg.jpg") center 32% / cover no-repeat !important; }
+#contacts::before { content: ""; position: absolute; left: 0; right: 0; top: 24px; height: clamp(74px, 9.5vw, 128px); z-index: 2; pointer-events: none;
+  background: url("../assets/images/home/help-toran.png") top center / auto 100% repeat-x; filter: drop-shadow(0 8px 10px rgba(0, 0, 0, .5)); }
+#contacts .section-head > .pb-phone { position: static !important; display: block; width: clamp(66px, 7.5vw, 92px) !important; height: auto; margin: 0 auto 14px; transform: none !important; }
+#contacts .section-title { margin-top: 0; }
+
+/* the card: maroon glass, gold border, lotus and kolam corner ornaments */
+#contacts .help-card { max-width: 980px !important; }
+#contacts .help-col.stamp .stamp__paper { border: 1.5px solid #D9A94E !important; border-radius: 30px !important;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60' fill='none' stroke='%23E3B968' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M30 10C23 19 23 30 30 38C37 30 37 19 30 10Z'/%3E%3Cpath d='M30 38C19 36 12 28 12 20C21 20 28 27 30 38Z'/%3E%3Cpath d='M30 38C41 36 48 28 48 20C39 20 32 27 30 38Z'/%3E%3Cpath d='M7 46C20 49 40 49 53 46'/%3E%3Cpath d='M18 52C26 54 34 54 42 52'/%3E%3C/svg%3E") left 16px top 12px / 52px 52px no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60' fill='none' stroke='%23E3B968' stroke-width='1.2' stroke-linecap='round' opacity='.8'%3E%3Cpath d='M30 5L55 30L30 55L5 30Z'/%3E%3Cpath d='M30 15L45 30L30 45L15 30Z'/%3E%3Cpath d='M30 25L35 30L30 35L25 30Z'/%3E%3Ccircle cx='30' cy='5' r='2.2' fill='%23E3B968'/%3E%3Ccircle cx='55' cy='30' r='2.2' fill='%23E3B968'/%3E%3Ccircle cx='30' cy='55' r='2.2' fill='%23E3B968'/%3E%3Ccircle cx='5' cy='30' r='2.2' fill='%23E3B968'/%3E%3C/svg%3E") right 18px top 14px / 46px 46px no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60' fill='none' stroke='%23E3B968' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M30 10C23 19 23 30 30 38C37 30 37 19 30 10Z'/%3E%3Cpath d='M30 38C19 36 12 28 12 20C21 20 28 27 30 38Z'/%3E%3Cpath d='M30 38C41 36 48 28 48 20C39 20 32 27 30 38Z'/%3E%3Cpath d='M7 46C20 49 40 49 53 46'/%3E%3Cpath d='M18 52C26 54 34 54 42 52'/%3E%3C/svg%3E") left 16px bottom 12px / 52px 52px no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60' fill='none' stroke='%23E3B968' stroke-width='1.2' stroke-linecap='round' opacity='.8'%3E%3Cpath d='M30 5L55 30L30 55L5 30Z'/%3E%3Cpath d='M30 15L45 30L30 45L15 30Z'/%3E%3Cpath d='M30 25L35 30L30 35L25 30Z'/%3E%3Ccircle cx='30' cy='5' r='2.2' fill='%23E3B968'/%3E%3Ccircle cx='55' cy='30' r='2.2' fill='%23E3B968'/%3E%3Ccircle cx='30' cy='55' r='2.2' fill='%23E3B968'/%3E%3Ccircle cx='5' cy='30' r='2.2' fill='%23E3B968'/%3E%3C/svg%3E") right 18px bottom 14px / 46px 46px no-repeat,
+    linear-gradient(135deg, rgba(112, 24, 28, .80), rgba(78, 14, 18, .86)) !important;
+  box-shadow: 0 28px 50px -24px rgba(0, 0, 0, .75), inset 0 0 0 4px rgba(217, 169, 78, .10), inset 0 1px 0 rgba(255, 255, 255, .14) !important; }
+/* row divider with a small gold flower in the middle */
+#contacts .stamp--contact .help-p + .help-p { border-top: 0 !important; position: relative; }
+#contacts .stamp--contact .help-p + .help-p::before { content: "" !important; display: block !important; position: absolute !important; left: 0; right: 0; top: 0; height: 22px; margin: 0 !important; transform: translateY(-50%); opacity: 1 !important; border-radius: 0 !important; box-shadow: none !important; pointer-events: none;
+  background: linear-gradient(90deg, rgba(217, 169, 78, .9), rgba(217, 169, 78, .9)) left center / calc(50% - 20px) 1px no-repeat,
+              linear-gradient(90deg, rgba(217, 169, 78, .9), rgba(217, 169, 78, .9)) right center / calc(50% - 20px) 1px no-repeat,
+              url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28' fill='none' stroke='%23E3B968' stroke-width='1.3' stroke-linecap='round'%3E%3Cpath d='M14 3C10 8 10 12 14 14C18 12 18 8 14 3Z'/%3E%3Cpath d='M25 14C20 10 16 10 14 14C16 18 20 18 25 14Z'/%3E%3Cpath d='M14 25C18 20 18 16 14 14C10 16 10 20 14 25Z'/%3E%3Cpath d='M3 14C8 18 12 18 14 14C12 10 8 10 3 14Z'/%3E%3Ccircle cx='14' cy='14' r='2' fill='%23E3B968'/%3E%3C/svg%3E") center / 22px 22px no-repeat !important; }
+
+/* wide screens: figures stand beside the cards, overlapping the card edge like stickers; the card is nudged away from them */
+@media (min-width: 900px) {
+  #contacts .help-col--bride.stamp { margin-left: 168px !important; }
+  #contacts .help-col--groom.stamp { margin-right: 168px !important; }
+  #contacts .help-col.stamp .stamp__face::before { width: 270px !important; height: 560px !important; top: -70px !important; bottom: auto !important; background-size: contain !important; background-position: center bottom !important; }
+  #contacts .help-col--bride.stamp .stamp__face::before { left: -200px !important; right: auto !important; }
+  #contacts .help-col--groom.stamp .stamp__face::before { right: -200px !important; left: auto !important; }
+  #contacts .help-card .help-col--bride.stamp .stamp__face { padding-left: 120px !important; padding-right: 44px !important; }
+  #contacts .help-card .help-col--groom.stamp .stamp__face { padding-right: 120px !important; padding-left: 44px !important; }
+}
+@media (max-width: 899px) { #contacts .help-col.stamp .stamp__paper { background-size: 40px 40px, 38px 38px, 40px 40px, 38px 38px, auto !important; } }
+
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -3928,3 +3965,33 @@ html[lang="ta"] .stamp--contact .help-side { font-style: normal; letter-spacing:
 .js .stampset .stamp--text { transition-delay: .25s; }
 .js .stampset.words-in .stamp--pic, .js .stampset.words-in .stamp--text { opacity: 1; translate: 0 0; }
 @media (prefers-reduced-motion: reduce) { .js .stampset .stamp--pic, .js .stampset .stamp--text { opacity: 1; translate: none; transition: none; } }
+
+/* ---------- 117 NEED HELP BELOW 900px: FIGURES SIT IN THE TOP-RIGHT CORNER, CLEAR OF THE TEXT ---------- */
+@media (max-width: 899px) {
+  #contacts .help-col--bride.stamp, #contacts .help-col--groom.stamp { margin-left: 0 !important; margin-right: 0 !important; margin-top: 56px !important; }
+  #contacts .help-col.stamp .stamp__face::before { width: 104px !important; height: 156px !important; top: -62px !important; bottom: auto !important; right: 14px !important; left: auto !important; background-size: contain !important; background-position: center bottom !important; }
+  #contacts .help-card .help-col.stamp .stamp__face { padding-left: 30px !important; padding-right: 30px !important; }
+  #contacts .stamp--contact .help-side { padding-right: 110px; }
+}
+
+/* ---------- 118 NEED HELP: HEADING SITS BELOW THE CORNER LOTUS ---------- */
+#contacts .help-card .help-col.stamp .stamp__face { padding-top: 60px !important; }
+
+/* ---------- 119 NEED HELP: WIDER CONTENT AREA SO NAMES DO NOT WRAP ---------- */
+#contacts.help .wrap { max-width: 1180px !important; }
+
+/* ---------- 120 NEED HELP (WIDE): LARGER FIGURES ---------- */
+@media (min-width: 900px) {
+  #contacts .help-col.stamp .stamp__face::before { width: 320px !important; height: 660px !important; top: -110px !important; }
+  #contacts .help-col--bride.stamp .stamp__face::before { left: -232px !important; }
+  #contacts .help-col--groom.stamp .stamp__face::before { right: -232px !important; }
+}
+
+/* ---------- 121 NEED HELP (WIDE): FIGURES ANCHORED TO THE BOTTOM OF THEIR CARDS, ROOM BETWEEN THE CARDS ---------- */
+@media (min-width: 900px) {
+  #contacts .help-card { gap: 104px !important; }
+  #contacts .help-col.stamp .stamp__face::before { top: auto !important; bottom: -22px !important; width: 290px !important; height: 480px !important; }
+  #contacts .help-col--bride.stamp .stamp__face::before { left: -216px !important; }
+  #contacts .help-col--groom.stamp .stamp__face::before { right: -216px !important; }
+  #contacts.help { padding-bottom: clamp(100px, 10vw, 140px) !important; }
+}
