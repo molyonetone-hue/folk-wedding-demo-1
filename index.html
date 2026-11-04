@@ -414,13 +414,13 @@
               <input type="text" name="relation" maxlength="80">
               <span class="up-field__hint" data-i18n="wishRelationHint"></span>
             </label>
-          </div>
-          <!-- Hidden from people; bots fill it in and get quietly ignored -->
-          <div class="wish-form__hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
-          <div class="pform__foot">
+            <div class="pform__foot pcard2__foot">
             <button class="up-send pform__send" type="submit"><span data-i18n="sendWish">Post your wish</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5L21 4l-7.5 18-2.6-7.9z"/><path d="M10.9 14.1L21 4"/></svg></button>
             <p class="up-status" id="wish-status" role="status" aria-live="polite"></p>
           </div>
+          </div>
+          <!-- Hidden from people; bots fill it in and get quietly ignored -->
+          <div class="wish-form__hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
         </form>
 
         <!-- Provider "form": a button to an outside form instead -->

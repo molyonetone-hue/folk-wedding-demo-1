@@ -3443,6 +3443,26 @@ html[lang="ta"] .guestbook .pcard2 .pcard2__label { font-family: var(--f-tamil-d
   .guestbook .pform__send { background: #A3262B !important; color: #FBEFD6 !important; border: 2px solid #5E1A1D !important; border-radius: 22px 14px 24px 12px / 14px 22px 12px 20px !important; box-shadow: 3px 4px 0 #5E1A1D !important; font-family: var(--f-script) !important; font-size: 1.35rem !important; }
 }
 
+/* ---------- 84 GUESTBOOK POSTCARD: RULED FIELD LINES, POST BUTTON INSIDE THE CARD IN FLAT RED ---------- */
+.guestbook .pcard2 .pcard2__line input { background: transparent !important; border: 0 !important; border-bottom: 1.5px solid #8B1E22 !important; border-radius: 0 !important; box-shadow: none !important; padding: 4px 2px 6px; height: auto; }
+.guestbook .pcard2 .pcard2__line input:focus { background: rgba(255, 252, 240, .55) !important; }
+.guestbook .pcard2 .pcard2__label { display: block; margin-bottom: 2px; }
+.guestbook .pcard2 .pform__foot { display: flex; flex-direction: column; align-items: center; gap: 8px; padding: 0 0 8px; }
+.guestbook .pcard2 .pform__send { background: #8B1E22 !important; color: #FBF4E2 !important; border: 0 !important; border-radius: 2px !important; box-shadow: none !important; background-image: none !important; font-family: var(--f-sans); font-weight: 600; letter-spacing: .06em; min-height: 42px; padding: 10px 22px; }
+.guestbook .pcard2 .pform__send:hover, .guestbook .pcard2 .pform__send:focus-visible { background: #6E1518 !important; }
+.guestbook .pcard2 .pform__send svg { stroke: currentColor; }
+.guestbook .pcard2 .up-status { margin: 0; color: #5E1A1D; font-family: var(--f-display); font-style: italic; text-align: center; }
+@media (min-width: 820px) {
+  .guestbook .pcard2 .pcard2__msg { top: 24%; height: 38%; }
+  .guestbook .pcard2 .pcard2__line--1 { top: 66%; }
+  .guestbook .pcard2 .pcard2__line--2 { top: 77%; }
+  .guestbook .pcard2 .pcard2__foot { position: absolute; left: 52%; top: 88%; width: 40%; padding: 0; }
+  .guestbook .pcard2 .pform__send { width: 100%; }
+}
+@media (max-width: 819px) {
+  .guestbook .pcard2 .pcard2__foot { margin: 22px 6px 26px; }
+}
+
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
