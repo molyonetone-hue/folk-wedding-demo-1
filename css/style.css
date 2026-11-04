@@ -4302,8 +4302,7 @@ body .calendar .save-date__btn { font-size: 1.08rem; }
 
 /* ---------- 132 CALENDAR: KEEPS THE LANDSCAPE CARD ON PHONES (SWIPE SIDEWAYS, TEXT AT FULL SIZE) ---------- */
 @media (max-width: 760px) {
-  body .calendar .calendar__wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 8px; }
-  body .calendar .cal-board { width: 800px; max-width: none; margin-left: 0; margin-right: auto; zoom: 1 !important; }
+  body .calendar .cal-board { width: 800px; max-width: none; margin-left: 0; margin-right: auto; }
   body .calendar .cal-board .cal__sheet { grid-template-columns: 1fr 14rem; padding: 40px 26px 24px; }
   body .calendar .cal-board .cal__big { font-size: 152px; white-space: nowrap; }
   body .calendar .cal-board .cal__info { grid-template-columns: 1fr 1fr 1fr; }
