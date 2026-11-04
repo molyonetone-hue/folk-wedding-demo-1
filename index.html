@@ -25,7 +25,7 @@
 
   <link rel="preload" as="image" href="assets/images/home/entrance-wide.jpg" media="(min-aspect-ratio: 4/5)">
   <link rel="preload" as="image" href="assets/images/home/entrance-tall.jpg" media="(max-aspect-ratio: 4/5)">
-  <link rel="stylesheet" href="css/style.css?v=74">
+  <link rel="stylesheet" href="css/style.css?v=75">
 </head>
 <body>
 
@@ -448,7 +448,6 @@
         </div>
         <h2 class="section-title" id="memories-title" data-i18n="memoriesTitle" data-reveal>Share Our Wedding Memories</h2>
         <p class="section-intro" data-i18n="memoriesIntro" data-reveal></p>
-        <button type="button" class="memories__add" id="memories-add" aria-expanded="false" aria-controls="memories-panel" data-i18n="addPhotos" data-reveal>Add your photos</button>
         <p class="memories__tag" id="memories-tag" data-reveal></p>
         <div class="memories__buttons" id="memories-buttons"></div>
         <div class="share-steps" id="share-steps" data-reveal>
@@ -480,6 +479,9 @@
     <div class="wrap">
       <h3 class="wall__title" id="wall-title" hidden></h3>
       <div class="wall" id="memory-wall"></div>
+      <div class="memories__bottom">
+        <button type="button" class="memories__add" id="memories-add" aria-expanded="false" aria-controls="memories-panel" data-i18n="addPhotos" data-reveal>Add your photos</button>
+      </div>
     </div>
   </section>
 
@@ -548,9 +550,9 @@
      ========================================================= -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
-<script src="js/config.js?v=74" defer></script>
-<script src="js/upload.js?v=74" defer></script>
-<script src="js/main.js?v=74" defer></script>
+<script src="js/config.js?v=75" defer></script>
+<script src="js/upload.js?v=75" defer></script>
+<script src="js/main.js?v=75" defer></script>
 
 <!-- Safety net: if main.js fails to start, never leave guests stuck behind the intro -->
 <script>
