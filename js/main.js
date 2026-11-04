@@ -302,25 +302,36 @@
   };
 
   // Family contacts: Call (tel:) and WhatsApp (wa.me) links from each phone number
+  // Open layout: white chalk figures beside each family, a pulli kolam between them. No cards.
   function renderContacts() {
     var sides = C.contacts || [];
     $('#contacts').hidden = !sides.length;
-    // one column per family, like the enquiries panel at the foot of an invitation
+    var IMG = 'assets/images/home/';
     $('#contacts-grid').innerHTML = sides.map(function (s, k) {
-      return (k ? '<span class="help-rule" aria-hidden="true"></span>' : '') +
-        '<div class="help-col help-col--' + esc(s.side) + ' stamp stamp--contact"><div class="stamp__paper"><div class="stamp__face">' +
-          '<h3 class="help-side">' + esc(ui(s.side === 'bride' ? 'bridesSide' : 'groomsSide')) + '</h3>' +
-          '<ul class="help-list">' + (s.people || []).map(function (p) {
-            var digits = String(p.phone || '').replace(/\D/g, '');
-            return '<li class="help-p">' +
-              '<p class="help-p__name">' + esc(t(p.name)) + '</p>' +
-              '<p class="help-p__rel">' + esc(t(p.relation)) + '</p>' +
-              '<p class="help-p__num">' + esc(p.phone) + '</p>' +
-              '<p class="help-p__btns">' +
-                '<a class="brand brand--call" href="tel:+' + digits + '" aria-label="' + esc(ui('call') + ' ' + t(p.name)) + '">' + BRAND.call + '<span>' + esc(ui('call')) + '</span></a>' +
-                '<a class="brand brand--wa" href="https://wa.me/' + digits + '" target="_blank" rel="noopener" aria-label="' + esc(ui('whatsapp') + ' ' + t(p.name)) + '">' + BRAND.wa + '<span>' + esc(ui('whatsapp')) + '</span></a>' +
-              '</p></li>';
-          }).join('') + '</ul></div></div></div>';
+      var bride = s.side === 'bride';
+      var fig = '<img class="hc-fig" src="' + IMG + (bride ? 'chalk-bride.png' : 'chalk-groom.png') + '" alt="" width="424" height="1080" loading="lazy" decoding="async" aria-hidden="true">';
+      var swirl = '<img class="hc-swirl" src="' + IMG + 'chalk-swirl-left.png" alt="" width="248" height="128" aria-hidden="true">';
+      var swirlR = '<img class="hc-swirl hc-swirl--r" src="' + IMG + 'chalk-swirl-left.png" alt="" width="248" height="128" aria-hidden="true">';
+      var block = '<div class="hc-block">' +
+        '<h3 class="hc-side">' + swirl + '<span>' + esc(ui(bride ? 'bridesSide' : 'groomsSide')) + '</span>' + swirlR + '</h3>' +
+        '<p class="hc-sub">' + esc(ui(bride ? 'bridesFamily' : 'groomsFamily')) + '</p>' +
+        '<ul class="hc-list">' + (s.people || []).map(function (p) {
+          var digits = String(p.phone || '').replace(/\D/g, '');
+          return '<li class="hc-p">' +
+            '<div class="hc-p__info">' +
+              '<p class="hc-p__name">' + esc(t(p.name)) + '</p>' +
+              '<p class="hc-p__rel">' + esc(t(p.relation)) + '</p>' +
+              '<p class="hc-p__num">' + esc(p.phone) + '</p>' +
+            '</div>' +
+            '<div class="hc-p__btns">' +
+              '<a class="hc-btn" href="tel:+' + digits + '" aria-label="' + esc(ui('call') + ' ' + t(p.name)) + '"><span class="hc-btn__ring">' + BRAND.call + '</span><span class="hc-btn__label">' + esc(ui('call')) + '</span></a>' +
+              '<a class="hc-btn" href="https://wa.me/' + digits + '" target="_blank" rel="noopener" aria-label="' + esc(ui('whatsapp') + ' ' + t(p.name)) + '"><span class="hc-btn__ring">' + BRAND.wa + '</span><span class="hc-btn__label">' + esc(ui('contactChat')) + '</span></a>' +
+            '</div></li>';
+        }).join('') + '</ul></div>';
+      // desktop: figure | block (bride) ... block | figure (groom); the kolam sits between the two families
+      var row = '<div class="hc-row hc-row--' + esc(s.side) + '">' + (bride ? fig + block : block + fig) + '</div>';
+      var kolam = k === 1 ? '<img class="hc-kolam" src="' + IMG + 'chalk-kolam.png" alt="" width="196" height="184" loading="lazy" decoding="async" aria-hidden="true">' : '';
+      return kolam + row;
     }).join('');
   }
 

@@ -25,7 +25,7 @@
 
   <link rel="preload" as="image" href="assets/images/home/entrance-wide.jpg" media="(min-aspect-ratio: 4/5)">
   <link rel="preload" as="image" href="assets/images/home/entrance-tall.jpg" media="(max-aspect-ratio: 4/5)">
-  <link rel="stylesheet" href="css/style.css?v=109">
+  <link rel="stylesheet" href="css/style.css?v=111">
 </head>
 <body>
 
@@ -299,21 +299,16 @@
        5b. NEED A HAND? — family contacts, printed like the enquiries panel of an invitation
        ========================================================= -->
   <section class="section help" id="contacts" aria-labelledby="contacts-title">
-    <div class="help-deco help-deco--l" aria-hidden="true"></div>
-    <div class="help-deco help-deco--r" aria-hidden="true"></div>
     <div class="wrap">
-      <div class="sec-ornament sec-ornament--top" aria-hidden="true" data-reveal>
-        <svg viewBox="0 0 200 28" xmlns="http://www.w3.org/2000/svg"><g fill="none" stroke="#C8A956" stroke-width="1.2" opacity=".55"><line x1="0" y1="14" x2="72" y2="14"/><circle cx="86" cy="14" r="8"/><circle cx="86" cy="14" r="4"/><circle cx="86" cy="6" r="2.5" fill="#C8A956" stroke="none"/><circle cx="86" cy="22" r="2.5" fill="#C8A956" stroke="none"/><circle cx="78" cy="14" r="2.5" fill="#C8A956" stroke="none"/><circle cx="94" cy="14" r="2.5" fill="#C8A956" stroke="none"/><circle cx="100" cy="14" r="8"/><circle cx="100" cy="14" r="4"/><circle cx="100" cy="6" r="2.5" fill="#C8A956" stroke="none"/><circle cx="100" cy="22" r="2.5" fill="#C8A956" stroke="none"/><circle cx="92" cy="14" r="2.5" fill="#C8A956" stroke="none"/><circle cx="108" cy="14" r="2.5" fill="#C8A956" stroke="none"/><circle cx="114" cy="14" r="8"/><circle cx="114" cy="14" r="4"/><circle cx="114" cy="6" r="2.5" fill="#C8A956" stroke="none"/><circle cx="114" cy="22" r="2.5" fill="#C8A956" stroke="none"/><circle cx="106" cy="14" r="2.5" fill="#C8A956" stroke="none"/><circle cx="122" cy="14" r="2.5" fill="#C8A956" stroke="none"/><line x1="128" y1="14" x2="200" y2="14"/></g></svg>
-      </div>
-      <header class="section-head">
-        <img class="pb-phone" src="assets/images/home/vintage-phone.png" alt="" width="600" height="600" loading="lazy" decoding="async" aria-hidden="true">
-        <h2 class="section-title" id="contacts-title" data-i18n="contactsTitle" data-reveal>Need a hand?</h2>
+      <header class="help-head">
+        <div class="help-title-row">
+          <h2 class="section-title" id="contacts-title" data-i18n="contactsTitle" data-reveal>Give us a ring.</h2>
+          <img class="help-phone" src="assets/images/home/chalk-phone.png" alt="" width="260" height="316" loading="lazy" decoding="async" aria-hidden="true">
+        </div>
         <p class="section-intro" data-i18n="contactsIntro" data-reveal></p>
       </header>
-      <div class="pb">
-        <svg class="pb-cord" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M50 0 C 14 8, 86 16, 50 26 S 14 44, 50 54 S 86 72, 50 82 S 30 96, 50 100" fill="none" stroke="#F1E3C8" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="0.5 7" vector-effect="non-scaling-stroke"/></svg>
-        <div class="help-card" id="contacts-grid"><!-- built from config.contacts --></div>
-      </div>
+      <div class="hc-grid" id="contacts-grid"><!-- built from config.contacts --></div>
+    </div>
     </div>
   </section>
 
@@ -550,9 +545,9 @@
      ========================================================= -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
-<script src="js/config.js?v=109" defer></script>
-<script src="js/upload.js?v=109" defer></script>
-<script src="js/main.js?v=109" defer></script>
+<script src="js/config.js?v=111" defer></script>
+<script src="js/upload.js?v=111" defer></script>
+<script src="js/main.js?v=111" defer></script>
 
 <!-- Safety net: if main.js fails to start, never leave guests stuck behind the intro -->
 <script>

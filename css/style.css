@@ -4094,3 +4094,65 @@ html[lang="ta"] .stamp--contact .help-side { font-style: normal; letter-spacing:
 /* ---------- 126 NEED HELP: FINAL BACKGROUND OVERRIDE (STORY SECTION BACKGROUND) ---------- */
 body #contacts.help.help { background: url("../assets/images/home/tex-maroon.jpg") center / cover, #4A1010 !important; }
 body #contacts.help.help::before, body #contacts.help.help::after { display: none !important; }
+
+/* ---------- 127 NEED HELP: REFERENCE DESIGN (OPEN WHITE CHALK LAYOUT, NO CARDS, FIGURES BESIDE EACH FAMILY, KOLAM BETWEEN) ---------- */
+body #contacts.help.help { padding-top: clamp(96px, 11vw, 150px) !important; padding-bottom: clamp(80px, 9vw, 130px) !important; color: #FFFFFF; }
+body #contacts .sec-ornament { display: none !important; }
+
+/* heading: "Give us a ring." with the chalk telephone beside it */
+body #contacts .help-head { text-align: center; }
+body #contacts .help-title-row { display: flex; align-items: center; justify-content: center; gap: clamp(10px, 1.6vw, 22px); flex-wrap: wrap; }
+body #contacts .help-title-row .section-title { margin: 0; color: #FFFFFF; font-family: var(--f-display); font-style: italic; font-weight: 400; font-size: clamp(2.6rem, 6vw, 4.2rem); line-height: 1.05; letter-spacing: .005em; }
+body #contacts .help-phone { display: block; width: clamp(62px, 6.4vw, 90px); height: auto; margin-top: .3em; }
+body #contacts .section-intro { margin: 12px auto 0; color: #FFFFFF; font-family: var(--f-sans); font-size: clamp(1rem, 1.5vw, 1.18rem); letter-spacing: .09em; }
+
+/* grid: desktop = figure | family | kolam | family | figure, in one row */
+body #contacts .hc-grid { display: grid; grid-template-columns: auto minmax(0, 1fr) auto minmax(0, 1fr) auto; align-items: center; column-gap: clamp(10px, 1.6vw, 26px); max-width: 1180px; margin: clamp(34px, 5vw, 64px) auto 0; }
+body #contacts .hc-row { display: contents; }
+body #contacts .hc-fig { display: block; width: auto; height: clamp(340px, 37vw, 480px); max-width: none; align-self: center; filter: drop-shadow(0 10px 18px rgba(0, 0, 0, .35)); }
+body #contacts .hc-kolam { justify-self: center; width: clamp(70px, 6.4vw, 96px); height: auto; opacity: .95; }
+body #contacts .hc-block { min-width: 0; color: #FFFFFF; }
+
+/* family heading: italic serif with two chalk swirls, then the small capitals line */
+body #contacts .hc-side { display: flex; align-items: center; gap: clamp(10px, 1vw, 14px); margin: 0; font-family: var(--f-display); font-style: italic; font-weight: 400; font-size: clamp(1.5rem, 2.5vw, 2.1rem); line-height: 1.1; color: #FFFFFF; }
+body #contacts .hc-swirl { flex: none; width: clamp(40px, 4vw, 60px); height: auto; }
+body #contacts .hc-swirl--r { transform: scaleX(-1); }
+body #contacts .hc-sub { margin: 8px 0 26px; font-family: var(--f-sans); font-size: clamp(.8rem, 1.2vw, .95rem); letter-spacing: .3em; text-transform: uppercase; color: #FFFFFF; }
+html[lang="ta"] body #contacts .hc-sub { letter-spacing: .06em; }
+
+/* people: details left, two round icon buttons right */
+body #contacts .hc-list { list-style: none; margin: 0; padding: 0; display: grid; gap: clamp(22px, 3vw, 34px); }
+body #contacts .hc-p { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; column-gap: 18px; }
+body #contacts .hc-p__name { margin: 0; font-family: var(--f-display); font-style: italic; font-weight: 400; font-size: clamp(1.25rem, 2vw, 1.6rem); line-height: 1.15; color: #FFFFFF; }
+body #contacts .hc-p__rel { margin: 2px 0 0; font-family: var(--f-sans); font-size: clamp(.95rem, 1.4vw, 1.05rem); color: #FFFFFF; }
+body #contacts .hc-p__num { margin: 4px 0 0; font-family: var(--f-sans); font-size: clamp(1rem, 1.5vw, 1.15rem); letter-spacing: .08em; color: #FFFFFF; }
+body #contacts .hc-p__btns { display: flex; gap: clamp(10px, 1.2vw, 18px); }
+body #contacts a.hc-btn { display: flex; flex-direction: column; align-items: center; gap: 8px; color: #FFFFFF; text-decoration: none; font-family: var(--f-sans); font-size: .9rem; letter-spacing: .04em; }
+body #contacts .hc-btn__ring { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; border: 1.5px solid #FFFFFF; transition: background .2s ease; }
+body #contacts .hc-btn__ring svg { width: 25px; height: 25px; color: #FFFFFF; }
+body #contacts a.hc-btn:hover .hc-btn__ring, body #contacts a.hc-btn:focus-visible .hc-btn__ring { background: rgba(255, 255, 255, .14); }
+body #contacts a.hc-btn:focus-visible { outline: 2px solid #FFFFFF; outline-offset: 4px; border-radius: 8px; }
+
+/* desktop: the figures stand a little past the edges of the column, like stickers, so the families get the room */
+@media (min-width: 900px) {
+  body #contacts .hc-row--bride .hc-fig { margin-left: -36px; }
+  body #contacts .hc-row--groom .hc-fig { margin-right: -36px; }
+}
+
+/* tablet and phone: stacked. each family is a row (figure beside its details), the kolam sits between the two rows */
+@media (max-width: 899px) {
+  body #contacts .hc-grid { display: flex; flex-direction: column; gap: 40px; max-width: 600px; }
+  body #contacts .hc-row { display: flex; align-items: center; gap: clamp(14px, 3vw, 26px); }
+  body #contacts .hc-fig { height: clamp(250px, 46vw, 330px); flex: none; }
+  body #contacts .hc-block { flex: 1; }
+  body #contacts .hc-kolam { align-self: center; }
+}
+@media (max-width: 520px) {
+  body #contacts .hc-fig { height: 230px; }
+  body #contacts .hc-row { gap: 12px; }
+  body #contacts .hc-p { grid-template-columns: 1fr; row-gap: 14px; }
+  body #contacts .hc-p__btns { gap: 18px; }
+  body #contacts .hc-btn__ring { width: 52px; height: 52px; }
+  body #contacts .hc-side { font-size: 1.55rem; }
+  body #contacts .hc-swirl { width: 34px; }
+}
