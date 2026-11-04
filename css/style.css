@@ -4374,3 +4374,6 @@ body .calendar .cal-board .cal__info-time b { font-family: var(--f-sans); font-w
 /* ---------- 139 CALENDAR: TABLE TIMES AND CELEBRATION NAMES IN INTER 600; BUTTON READS ADD TO CALENDAR ---------- */
 body .calendar .cal-board .cal__table td:last-child { font-family: var(--f-sans); font-weight: 600; }
 body .calendar .cal-board .cal__table td:nth-child(2) { font-family: var(--f-sans); font-weight: 600; }
+
+/* ---------- 140 CALENDAR: CELEBRATION NAMES IN ALL CAPS ---------- */
+body .calendar .cal-board .cal__table td:nth-child(2) { text-transform: uppercase; letter-spacing: .04em; }
