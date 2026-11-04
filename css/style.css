@@ -4327,3 +4327,19 @@ body .calendar .save-date__btn { font-size: 1.08rem; }
   body .calendar .cal-board .cal__forecast li { font-size: 1.05rem; padding: 5px 0; }
   body .calendar .cal-board .cal__slip { display: block; }
 }
+
+/* ---------- 134 CALENDAR: TYPE AND WEIGHTS FOLLOW THE REFERENCE (ANTON CAPS, BOLD SERIF LABELS, ROMAN RASI, SANS VENUE) ---------- */
+body .calendar .cal-board .cal__wd-big { font-family: "Anton", sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: .02em; }
+body .calendar .cal-board .cal__dmy { font-family: var(--f-display); font-style: italic; font-weight: 400; }
+body .calendar .cal-board .cal__info-time .cal__k, body .calendar .cal-board .cal__info-place .cal__k { font-family: var(--f-display); font-style: normal; font-weight: 700; text-transform: uppercase; letter-spacing: .03em; }
+body .calendar .cal-board .cal__info-time b { font-family: "Anton", sans-serif; font-weight: 400; }
+body .calendar .cal-board .cal__info-place #cal-venue { font-family: var(--f-sans); font-weight: 400; }
+body .calendar .cal-board .cal__count { font-family: var(--f-display); font-weight: 700; letter-spacing: .04em; }
+body .calendar .cal-board .cal__count-num b { font-family: "Anton", sans-serif; font-weight: 400; }
+body .calendar .cal-board .cal__table-title { font-family: var(--f-display); font-style: italic; font-weight: 700; }
+body .calendar .cal-board .cal__table td { font-family: var(--f-display); font-weight: 400; }
+body .calendar .cal-board .cal__table td:first-child { font-family: "Anton", sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: .03em; }
+body .calendar .cal-board .cal__table td:last-child { font-family: var(--f-display); font-weight: 700; }
+body .calendar .cal-board .cal__side-title { font-family: var(--f-display); font-style: normal; font-weight: 700; }
+body .calendar .cal-board .cal__forecast li { font-family: var(--f-display); font-weight: 400; }
+body .calendar .cal-board .cal__forecast b { font-family: var(--f-display); font-weight: 700; }
