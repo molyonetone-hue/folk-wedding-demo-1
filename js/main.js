@@ -183,7 +183,7 @@
     $('#cal-events').innerHTML = (C.events || []).map(function (ev) {
       var v = ev.venue || (ev.sides && ev.sides[0]) || {};
       var tm = lang === 'ta' && v.timeTa ? v.timeTa : v.time;
-      return '<tr><td>' + esc(ev.shortDate.day) + ' ' + esc(t(ev.shortDate.weekday)) + '</td><td>' + esc(t(ev.name)) + '</td><td>' + esc(tm || '') + '</td></tr>';
+      return '<tr' + (ev.tone === 'kalyanam' ? ' class="is-kalyanam"' : '') + '><td>' + esc(ev.shortDate.day) + ' ' + esc(t(ev.shortDate.weekday)) + '</td><td>' + esc(t(ev.name)) + '</td><td>' + esc(tm || '') + '</td></tr>';
     }).join('');
     var kal = (C.events || []).filter(function (e) { return e.venue && e.tone === 'kalyanam'; })[0];
     if (kal) {

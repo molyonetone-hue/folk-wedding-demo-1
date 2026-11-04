@@ -4377,3 +4377,7 @@ body .calendar .cal-board .cal__table td:nth-child(2) { font-family: var(--f-san
 
 /* ---------- 140 CALENDAR: CELEBRATION NAMES IN ALL CAPS ---------- */
 body .calendar .cal-board .cal__table td:nth-child(2) { text-transform: uppercase; letter-spacing: .04em; }
+
+/* ---------- 141 CALENDAR: YELLOW HIGHLIGHT ON THE KALYANAM ROW ---------- */
+body .calendar .cal-board .cal__table tr.is-kalyanam td { background: #F7D54A; }
+body .calendar .cal-board .cal__table tr.is-kalyanam td:first-child { background: #F7D54A; }
