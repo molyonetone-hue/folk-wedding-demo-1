@@ -3484,6 +3484,19 @@ html[lang="ta"] .guestbook .pcard2 .pcard2__label { font-family: var(--f-tamil-d
   .guestbook .pcard2::before { display: none; }
 }
 
+/* ---------- 88 GUESTBOOK POSTCARD ON PHONES: FIELDS INSIDE THE BORDER, KOLAM BAND ON THE BOTTOM, CALL-STYLE POST BUTTON ---------- */
+@media (max-width: 819px) {
+  .guestbook .pcard2 { padding-left: 13%; padding-right: 13%; padding-bottom: 64px; }
+  .guestbook .pcard2::after { display: block; content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 26px; z-index: 0; pointer-events: none;
+    background: var(--kolam-orn) center / auto 100% repeat-x; }
+  .guestbook .pcard2 .pform__foot { margin: 18px 0 0; }
+  .guestbook .pcard2 .pform__send { border-radius: 999px !important; background: #5E1A1D !important; color: #F8EFD6 !important; min-height: 42px; padding: 8px 20px; font-size: .8rem; font-weight: 700; letter-spacing: .02em; }
+  .guestbook .pcard2 .pform__send:hover, .guestbook .pcard2 .pform__send:focus-visible { background: #3E0F11 !important; }
+}
+@media (min-width: 820px) {
+  .guestbook .pcard2 .pform__send { border-radius: 999px !important; background: #5E1A1D !important; color: #F8EFD6 !important; min-height: 42px; padding: 8px 20px; font-size: .8rem; font-weight: 700; letter-spacing: .02em; }
+}
+
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
