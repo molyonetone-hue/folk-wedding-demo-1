@@ -3766,6 +3766,45 @@ html[lang="ta"] .footer .footer__date { letter-spacing: .06em; }
 .footer .footer__line { max-width: 24rem; margin: 30px auto 0; padding-top: 24px; border-top: 1px solid rgba(243, 213, 138, .3); font-size: 1.2rem; opacity: 1; }
 .footer .footer__credit { margin-top: 48px; }
 
+/* ---------- 108 NEED HELP: GLASSMORPHIC CARDS, WHATSAPP BRANDING, ILLUSTRATION STICKER TILES ---------- */
+/* glass card (replaces the old paper stamp) */
+.help-col.stamp { filter: none !important; transform: none !important; margin-top: 0 !important; }
+@media (min-width: 760px) { .help-col--groom.stamp { margin-top: 36px !important; } }
+.help-col.stamp .stamp__paper { padding: 0 !important; -webkit-mask: none !important; mask: none !important; border-radius: 24px !important;
+  background: linear-gradient(135deg, rgba(255, 255, 255, .20), rgba(255, 255, 255, .07)) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(1.3); backdrop-filter: blur(16px) saturate(1.3);
+  border: 1px solid rgba(255, 255, 255, .30); box-shadow: 0 24px 44px -20px rgba(0, 0, 0, .65), inset 0 1px 0 rgba(255, 255, 255, .4), inset 0 -1px 0 rgba(255, 255, 255, .08) !important; }
+.help-col.stamp .stamp__face { position: relative; margin: 0 !important; padding: 44px clamp(22px, 4vw, 34px) 36px !important; overflow: visible !important; background: none !important; box-shadow: none !important; outline: 0 !important; }
+/* text on glass */
+.stamp--contact .help-side { color: #F3D58A !important; font-family: var(--f-display) !important; font-size: .9rem; letter-spacing: .24em; text-shadow: 0 1px 10px rgba(0, 0, 0, .4); }
+.stamp--contact .help-side::after { width: 72px !important; height: 1px !important; margin: 12px 0 2px !important; background: linear-gradient(90deg, rgba(243, 213, 138, .9), transparent) !important; }
+.stamp--contact .help-list { padding-right: 0 !important; }
+.stamp--contact .help-p__rel { color: rgba(255, 255, 255, .7) !important; }
+.stamp--contact .help-p__name { color: #FFFFFF !important; text-shadow: 0 1px 10px rgba(0, 0, 0, .35) !important; }
+.stamp--contact .help-p__num { color: #F3D58A !important; text-shadow: 0 1px 10px rgba(0, 0, 0, .35) !important; }
+.stamp--contact .help-p + .help-p { border-top: 1px solid rgba(255, 255, 255, .22) !important; }
+.stamp--contact .help-p + .help-p::before { display: none !important; }
+/* buttons: Call as a glass pill, WhatsApp in its own brand green with a white glyph */
+.help-card .stamp--contact .help-p__btns a, .help-card .stamp--contact .help-p__btns a.brand--call { background: rgba(255, 255, 255, .14) !important; color: #FFFFFF !important; border: 1px solid rgba(255, 255, 255, .45) !important; border-radius: 999px !important; text-shadow: none !important; }
+.help-card .stamp--contact .help-p__btns a:first-child:hover, .help-card .stamp--contact .help-p__btns a.brand--call:hover { background: rgba(255, 255, 255, .26) !important; color: #FFFFFF !important; }
+.help-card .stamp--contact .help-p__btns a.brand--wa { background: #25D366 !important; color: #FFFFFF !important; border: 1px solid #25D366 !important; }
+.help-card .stamp--contact .help-p__btns a.brand--wa:hover, .help-card .stamp--contact .help-p__btns a.brand--wa:focus-visible { background: #1EBE5A !important; border-color: #1EBE5A !important; color: #FFFFFF !important; }
+.help-card .stamp--contact .help-p__btns a svg { fill: none; }
+/* illustration sticker tiles, stuck on the card edges at slight angles */
+.stamp--contact .stamp__face::before, .stamp--contact .stamp__face::after { content: "" !important; display: block !important; position: absolute !important; z-index: 3; width: 86px !important; height: 86px !important; right: auto !important; bottom: auto !important; opacity: 1 !important; mix-blend-mode: normal !important; pointer-events: none;
+  background-color: #FBF4E2 !important; background-repeat: no-repeat !important; background-position: center !important; background-size: 74% !important; border-radius: 20px;
+  box-shadow: 0 0 0 4px #FFFFFF, 0 12px 22px -8px rgba(0, 0, 0, .55) !important; }
+.stamp--contact .stamp__face::before { top: -22px !important; right: -12px !important; left: auto !important; transform: rotate(9deg); }
+.stamp--contact .stamp__face::after { bottom: -20px !important; left: -12px !important; top: auto !important; transform: rotate(-8deg); width: 78px !important; height: 78px !important; }
+.help-col--bride .stamp__face::before { background-image: url("../assets/images/home/contact-art-1.png") !important; }
+.help-col--bride .stamp__face::after { background-image: url("../assets/images/home/contact-art-2.png") !important; }
+.help-col--groom .stamp__face::before { background-image: url("../assets/images/home/contact-art-3.png") !important; }
+.help-col--groom .stamp__face::after { background-image: url("../assets/images/home/contact-art-4.png") !important; }
+.help-col--groom .stamp__face::before { transform: rotate(-7deg); }
+.help-col--groom .stamp__face::after { transform: rotate(10deg); }
+@media (max-width: 759px) { .stamp--contact .stamp__face::before { right: -6px !important; width: 72px !important; height: 72px !important; } .stamp--contact .stamp__face::after { left: -6px !important; width: 66px !important; height: 66px !important; } }
+@media (prefers-reduced-motion: reduce) { .stamp--contact .stamp__face::before, .stamp--contact .stamp__face::after { transform: none; } }
+
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
