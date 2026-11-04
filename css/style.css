@@ -3477,6 +3477,13 @@ html[lang="ta"] .guestbook .pcard2 .pcard2__label { font-family: var(--f-tamil-d
   .guestbook .pcard2 > * { position: relative; z-index: 1; }
 }
 
+/* ---------- 87 GUESTBOOK POSTCARD ON PHONES: PORTRAIT ARTWORK (ART ON TOP, WRITING AREA BELOW, ONE SHEET) ---------- */
+@media (max-width: 819px) {
+  .guestbook .pcard2 { background: url("../assets/images/home/guestbook-postcard-portrait.jpg") center top / 100% auto no-repeat, #F4ECD9 !important; padding-top: 75% !important; }
+  .guestbook .pcard2::after { display: none; }
+  .guestbook .pcard2::before { display: none; }
+}
+
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
