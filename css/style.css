@@ -3463,6 +3463,11 @@ html[lang="ta"] .guestbook .pcard2 .pcard2__label { font-family: var(--f-tamil-d
   .guestbook .pcard2 .pcard2__foot { margin: 22px 6px 26px; }
 }
 
+/* ---------- 85 GUESTBOOK POSTCARD: ONE PAPER COLOUR, MATCHING THE ARTWORK AT THE TOP ---------- */
+.guestbook .pcard2 { background-color: #F4ECD9 !important; }
+.guestbook .pcard2 .pcard2__foot, .guestbook .pcard2 .pcard2__line input, .guestbook .pcard2 .up-field textarea { background-color: transparent; }
+.guestbook .pcard2 .pcard2__line input:focus, .guestbook .pcard2 .up-field textarea:focus { background-color: rgba(255, 252, 240, .6) !important; }
+
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
