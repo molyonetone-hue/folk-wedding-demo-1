@@ -3427,6 +3427,22 @@ html[lang="ta"] .guestbook .pcard2 .pcard2__label { font-family: var(--f-tamil-d
 .guestbook .pcard2 .up-field__hint { font-family: var(--f-display); font-style: italic; color: #6B4A2E !important; }
 .guestbook .pcard2 .wish-form__count { color: #6B4A2E; }
 
+/* ---------- 84 GUESTBOOK POSTCARD: HAND-DRAWN RED FIELD LINES, POST BUTTON INSIDE THE CARD, ILLUSTRATED RED STAMP-BUTTON ---------- */
+.guestbook .pcard2 .pcard2__line input { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 12' preserveAspectRatio='none'%3E%3Cpath d='M2 7 C 40 3, 70 9, 110 6 S 170 3, 215 7 S 300 9, 345 5 S 380 8, 398 6' fill='none' stroke='%23A3262B' stroke-width='1.7' stroke-linecap='round'/%3E%3C/svg%3E") left bottom / 100% 12px no-repeat transparent !important; padding-bottom: 8px; }
+.guestbook .pcard2 .pcard2__line input:focus { background-color: transparent !important; }
+.guestbook .pcard2 .pcard2__line .pcard2__label { font-family: var(--f-script); }
+@media (min-width: 820px) {
+  .guestbook .wish-form.pform { position: relative; }
+  .guestbook .pform__foot { position: absolute; left: 52%; width: 40%; bottom: 4.5%; margin: 0; display: grid; justify-items: center; gap: 4px; }
+  .guestbook .pform__send { min-height: 48px; padding: 0 26px; background: #A3262B !important; color: #FBEFD6 !important; border: 2px solid #5E1A1D !important; border-radius: 22px 14px 24px 12px / 14px 22px 12px 20px !important; box-shadow: 3px 4px 0 #5E1A1D, inset 0 0 0 3px #A3262B, inset 0 0 0 4px rgba(251, 239, 214, .55) !important; font-family: var(--f-script) !important; font-size: 1.35rem !important; letter-spacing: .01em; }
+  .guestbook .pform__send:hover { transform: translate(-1px, -2px); }
+  .guestbook #wish-status { color: #5E1A1D; }
+}
+@media (max-width: 819px) {
+  .guestbook .pform__foot { margin-top: 22px; }
+  .guestbook .pform__send { background: #A3262B !important; color: #FBEFD6 !important; border: 2px solid #5E1A1D !important; border-radius: 22px 14px 24px 12px / 14px 22px 12px 20px !important; box-shadow: 3px 4px 0 #5E1A1D !important; font-family: var(--f-script) !important; font-size: 1.35rem !important; }
+}
+
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
