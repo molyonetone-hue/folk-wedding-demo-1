@@ -582,6 +582,39 @@
         (w.relation ? '<span class="wish-card__rel">' + esc(t(w.relation)) + '</span>' : '') + '</p></li>';
     }).join('');
     if (siteStarted) observeReveals();
+    initWishCarousel();
+  }
+
+  // Swipeable carousel for the posted wishes: swipe, prev/next buttons and dots
+  function initWishCarousel() {
+    var list = $('#wishes'), nav = $('#wishes-nav');
+    if (!list || !nav) return;
+    var items = list.children;
+    nav.hidden = items.length < 2;
+    var dots = $('#wishes-dots');
+    dots.innerHTML = Array.prototype.map.call(items, function (_, i) {
+      return '<button type="button" class="wishes__dot" aria-label="' + (i + 1) + '"></button>';
+    }).join('');
+    function current() { return Math.round(list.scrollLeft / Math.max(1, list.clientWidth)); }
+    function go(i) { var n = Math.max(0, Math.min(items.length - 1, i)); list.scrollTo({ left: n * list.clientWidth, behavior: 'smooth' }); }
+    function mark() {
+      var c = current();
+      Array.prototype.forEach.call(dots.children, function (d, i) { d.classList.toggle('is-on', i === c); });
+      $('#wishes-prev').disabled = c <= 0;
+      $('#wishes-next').disabled = c >= items.length - 1;
+    }
+    if (!list._carousel) {
+      list._carousel = true;
+      list.addEventListener('scroll', mark, { passive: true });
+      $('#wishes-prev').addEventListener('click', function () { go(current() - 1); });
+      $('#wishes-next').addEventListener('click', function () { go(current() + 1); });
+      dots.addEventListener('click', function (e) {
+        var b = e.target.closest('.wishes__dot'); if (!b) return;
+        go(Array.prototype.indexOf.call(dots.children, b));
+      });
+    }
+    list.scrollLeft = 0;
+    mark();
   }
 
   function updateWishCount() {
@@ -1261,6 +1294,16 @@
     initCountdown();
     initIntro();
   }
+
+  // Memories: the red 'Add your photos' button opens the uploader panel
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest && e.target.closest('#memories-add');
+    if (!btn) return;
+    var open = btn.getAttribute('aria-expanded') !== 'true';
+    btn.setAttribute('aria-expanded', String(open));
+    document.getElementById('memories').classList.toggle('is-open', open);
+    if (open) { var panel = document.getElementById('memories-panel'); if (panel) panel.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
