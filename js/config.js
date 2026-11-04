@@ -137,7 +137,7 @@ window.WEDDING_CONFIG = {
       footerFeast: "Come hungry. The banana leaves are ready.",
       saveDateLine: "Mark your calendars!",
       saveDateSub: "Four days of celebrations. One date to remember.",
-      calFourDays: "Four days, together", saveWeddingDate: "Save the wedding date",
+      calFourDays: "Four days, together", saveWeddingDate: "Add to calendar",
       contactsTitle: "A little lost? Give us a ring.",
       contactsIntro: "For directions, last-minute questions, or a little help on the day, our family is just a call or WhatsApp away.",
       bridesFamily: "Bride's family", groomsFamily: "Groom's family", contactChat: "Chat",

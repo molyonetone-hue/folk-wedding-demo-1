@@ -4370,3 +4370,7 @@ body .calendar .cal-board .cal__count-num b { font-family: "Anton", sans-serif; 
 body .calendar .cal-board .cal__table td:first-child { font-size: 1.7rem; }
 body .calendar .cal-board .cal__big { margin: 26px 0 22px; }
 body .calendar .cal-board .cal__info-time b { font-family: var(--f-sans); font-weight: 600; font-size: clamp(1.35rem, 2.5vw, 1.8rem); letter-spacing: 0; }
+
+/* ---------- 139 CALENDAR: TABLE TIMES AND CELEBRATION NAMES IN INTER 600; BUTTON READS ADD TO CALENDAR ---------- */
+body .calendar .cal-board .cal__table td:last-child { font-family: var(--f-sans); font-weight: 600; }
+body .calendar .cal-board .cal__table td:nth-child(2) { font-family: var(--f-sans); font-weight: 600; }
