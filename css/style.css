@@ -3717,6 +3717,32 @@ html[lang="ta"] .guestbook .wishes .wish-card__name { letter-spacing: 0; text-tr
 .memories .film__frame { position: relative; }
 .memories .film__frame::after { display: block !important; content: ""; position: absolute; inset: 3px; border-radius: 4px; pointer-events: none; background: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='220'%20height='220'%3E%3Cfilter%20id='g'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='.85'%20numOctaves='3'%20stitchTiles='stitch'/%3E%3CfeColorMatrix%20values='0%200%200%200%20.05%20%200%200%200%200%20.03%20%200%200%200%200%20.02%20%200%200%200%201.6%20-.55'/%3E%3C/filter%3E%3Crect%20width='100%25'%20height='100%25'%20filter='url%28%23g%29'/%3E%3C/svg%3E") 0 0 / 160px 160px, radial-gradient(ellipse at center, transparent 50%, rgba(40, 18, 6, .35)); mix-blend-mode: multiply; opacity: .55; }
 
+/* ---------- 105 MEMORIES: SUPPLIED KOLAM MOTIF + HEAVILY WORN VINTAGE FILM ---------- */
+.memories__kolam { width: clamp(84px, 12vw, 120px); aspect-ratio: auto; margin: 0 auto clamp(12px, 2vw, 20px); }
+.memories__kolam img { display: block; width: 100%; height: auto; mix-blend-mode: multiply; }
+.memories__kolam svg { display: none; }
+
+.memories .film { padding: 34px 0 !important;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Cfilter id='n' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' seed='4' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .86  0 0 0 0 .66  0 0 0 0 .38  0 0 0 .9 -.34'/%3E%3C/filter%3E%3Crect width='320' height='320' filter='url(%23n)'/%3E%3C/svg%3E") 0 0 / 320px 320px,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='200'%3E%3Cfilter id='b' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.012 .04' numOctaves='4' seed='9' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .55  0 0 0 0 .32  0 0 0 0 .14  0 0 0 1.4 -.55'/%3E%3C/filter%3E%3Crect width='600' height='200' filter='url(%23b)'/%3E%3C/svg%3E") 0 0 / 600px 200px,
+    linear-gradient(180deg, rgba(0, 0, 0, .55), rgba(0, 0, 0, 0) 16%, rgba(0, 0, 0, 0) 84%, rgba(0, 0, 0, .55)),
+    linear-gradient(90deg, rgba(255, 225, 170, .07) 0 1px, transparent 1px 137px, rgba(255, 225, 170, .05) 137px 138px, transparent 138px 311px),
+    radial-gradient(ellipse at 30% 45%, #3A2314 0%, #1B100A 78%), #1B100A !important;
+  box-shadow: inset 0 0 70px rgba(0, 0, 0, .75), inset 0 0 0 2px rgba(80, 50, 28, .55), 0 20px 34px -22px rgba(30, 10, 4, .85) !important; }
+.memories .film::before, .memories .film::after { height: 22px !important; top: 8px !important;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='22' viewBox='0 0 34 22'%3E%3Cfilter id='r' x='-20%25' y='-20%25' width='140%25' height='140%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.55' numOctaves='2' seed='3' result='t'/%3E%3CfeDisplacementMap in='SourceGraphic' in2='t' scale='3.2'/%3E%3C/filter%3E%3Crect x='5' y='4' width='24' height='14' rx='3.5' fill='%23F5DFA4' filter='url(%23r)'/%3E%3C/svg%3E") 0 50% / 34px 22px repeat-x !important; filter: drop-shadow(0 0 5px rgba(255, 205, 120, .8)) sepia(.35) saturate(1.2); opacity: .96; }
+.memories .film::after { top: auto !important; bottom: 8px !important; }
+.memories .film__track { gap: 22px; position: relative; }
+.memories .film__frame img { border: 3px solid #0F0805; border-radius: 3px; filter: sepia(.4) saturate(.8) contrast(1.14) brightness(.94) !important; box-shadow: inset 0 0 26px rgba(50, 24, 8, .55), 0 0 0 1px rgba(255, 225, 170, .08); }
+/* scratches and dust over the whole strip */
+.memories .film__track::after { content: ""; position: absolute; inset: 0; pointer-events: none; z-index: 3;
+  background:
+    repeating-linear-gradient(88deg, transparent 0 91px, rgba(255, 235, 200, .09) 91px 92px, transparent 92px 217px, rgba(255, 235, 200, .06) 217px 218px, transparent 218px 331px),
+    radial-gradient(circle at 18% 30%, rgba(255, 235, 200, .18) 0 1px, transparent 2px),
+    radial-gradient(circle at 63% 72%, rgba(255, 235, 200, .16) 0 1.4px, transparent 2.4px),
+    radial-gradient(circle at 84% 22%, rgba(255, 235, 200, .14) 0 1px, transparent 2px); mix-blend-mode: screen; }
+
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
