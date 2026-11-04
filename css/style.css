@@ -4343,3 +4343,8 @@ body .calendar .cal-board .cal__table td:last-child { font-family: var(--f-displ
 body .calendar .cal-board .cal__side-title { font-family: var(--f-display); font-style: normal; font-weight: 700; }
 body .calendar .cal-board .cal__forecast li { font-family: var(--f-display); font-weight: 400; }
 body .calendar .cal-board .cal__forecast b { font-family: var(--f-display); font-weight: 700; }
+
+/* ---------- 135 CALENDAR: WIDER DATE COLUMN IN THE FOUR DAYS TABLE; BOLDER, LARGER CELEBRATION NAMES ---------- */
+body .calendar .cal-board .cal__table td:first-child { width: 128px; min-width: 128px; font-size: 1.45rem; padding-right: 10px; }
+body .calendar .cal-board .cal__table td:nth-child(2) { font-weight: 700; font-size: 1.3rem; line-height: 1.25; }
+body .calendar .cal-board .cal__table td:last-child { font-size: 1.1rem; }
