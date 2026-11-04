@@ -3468,6 +3468,15 @@ html[lang="ta"] .guestbook .pcard2 .pcard2__label { font-family: var(--f-tamil-d
 .guestbook .pcard2 .pcard2__foot, .guestbook .pcard2 .pcard2__line input, .guestbook .pcard2 .up-field textarea { background-color: transparent; }
 .guestbook .pcard2 .pcard2__line input:focus, .guestbook .pcard2 .up-field textarea:focus { background-color: rgba(255, 252, 240, .6) !important; }
 
+/* ---------- 86 GUESTBOOK POSTCARD ON PHONES: ONE FLAT PAPER COLOUR, ARTWORK FADES INTO IT ---------- */
+@media (max-width: 819px) {
+  .guestbook .pcard2 { background: #F4ECD9 !important; }
+  .guestbook .pcard2::after { content: ""; position: absolute; left: 0; right: 0; top: 0; height: auto; aspect-ratio: 3 / 2; z-index: 0; pointer-events: none;
+    background: url("../assets/images/home/guestbook-postcard.jpg") center top / 100% 100% no-repeat;
+    -webkit-mask-image: linear-gradient(to bottom, #000 78%, transparent 100%); mask-image: linear-gradient(to bottom, #000 78%, transparent 100%); }
+  .guestbook .pcard2 > * { position: relative; z-index: 1; }
+}
+
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
