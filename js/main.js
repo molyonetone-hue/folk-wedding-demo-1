@@ -162,7 +162,8 @@
     if (!board) return;
     var wrap = board.parentElement, cs = getComputedStyle(wrap);
     var avail = wrap.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
-    board.style.zoom = avail < 800 ? (avail / 800).toFixed(4) : '';
+    // phones use the stacked, full-width layout (CSS), so the board is not shrunk there
+    board.style.zoom = avail < 800 && window.innerWidth > 760 ? (avail / 800).toFixed(4) : '';
   }
   window.addEventListener('resize', fitCalendar);
 

@@ -4251,3 +4251,51 @@ html[lang="ta"] body .calendar .cal-board .cal__table-title { font-family: var(-
   body .calendar .cal-board .cal__info > div { padding: 10px 6px; min-height: 0; }
   body .calendar .cal-board .cal__info-place #cal-venue { font-size: .72rem; }
 }
+
+/* ---------- 131 CALENDAR: READABLE TEXT (LARGER TYPE, STACKED ON PHONES WITHOUT SHRINKING THE BOARD) ---------- */
+body .calendar .cal-board .cal__table td { font-size: 1.15rem; padding: 10px 6px; }
+body .calendar .cal-board .cal__table td:first-child { font-size: 1.25rem; }
+body .calendar .cal-board .cal__table-title { font-size: clamp(1.4rem, 2.8vw, 1.9rem); }
+body .calendar .cal-board .cal__side-title { font-size: clamp(1.4rem, 2.8vw, 1.9rem); }
+body .calendar .cal-board .cal__forecast li { font-size: 1.05rem; padding: 5px 0; }
+body .calendar .cal-board .cal__info-time .cal__k, body .calendar .cal-board .cal__info-place .cal__k { font-size: clamp(1rem, 1.9vw, 1.2rem); }
+body .calendar .cal-board .cal__info-place #cal-venue { font-size: clamp(.95rem, 1.7vw, 1.1rem); }
+body .calendar .cal-board .cal__count { font-size: clamp(.95rem, 1.6vw, 1.1rem); }
+body .calendar .cal-board .cal__dmy { font-size: clamp(1.05rem, 2vw, 1.3rem); }
+body .calendar .save-date__btn { font-size: 1.08rem; }
+
+@media (max-width: 760px) {
+  body .calendar .cal-board { width: 100%; }
+  body .calendar .cal-board .cal__sheet { grid-template-columns: 1fr; padding: 18px 14px 16px; }
+  body .calendar .cal-board .cal__big { font-size: 19vw; }
+  body .calendar .cal-board .cal__info { grid-template-columns: 1fr; }
+  body .calendar .cal-board .cal__info > div { min-height: 0; padding: 12px 8px; }
+  body .calendar .cal-board .cal__info > div + div { border-left: 0; border-top: 2px solid #18181c; }
+  body .calendar .cal-board .cal__wd-big { font-size: 2rem; }
+  body .calendar .cal-board .cal__dmy { font-size: 1.15rem; }
+  body .calendar .cal-board .cal__info-time b { font-size: 2.1rem; }
+  body .calendar .cal-board .cal__info-time .cal__k, body .calendar .cal-board .cal__info-place .cal__k { font-size: 1.05rem; }
+  body .calendar .cal-board .cal__info-place #cal-venue { font-size: 1.05rem; line-height: 1.4; }
+  body .calendar .cal-board .cal__count { font-size: 1rem; gap: 10px; }
+  body .calendar .cal-board .cal__count-num b { font-size: 2.1rem; }
+  body .calendar .cal-board .cal__table-title { font-size: 1.6rem; }
+  body .calendar .cal-board .cal__table td { font-size: 1.1rem; padding: 11px 6px; }
+  body .calendar .cal-board .cal__table td:first-child { font-size: 1.2rem; }
+  body .calendar .cal-board .cal__side { margin-top: 16px; }
+  body .calendar .cal-board .cal__side-title { font-size: 1.6rem; }
+  body .calendar .cal-board .cal__forecast li { font-size: 1.1rem; padding: 7px 0; }
+  body .calendar .cal-board .cal__slip { display: none; }
+}
+
+/* phones: keep the big date, table and countdown inside the card */
+@media (max-width: 760px) {
+  body .calendar .cal-board .cal__big { font-size: 15vw; white-space: nowrap; }
+  body .calendar .cal-board .cal__count-num b { font-size: 1.8rem; }
+  body .calendar .cal-board .cal__dot { display: none; }
+  body .calendar .cal-board .cal__count { gap: 14px 12px; }
+  body .calendar .cal-board .cal__table { table-layout: fixed; }
+  body .calendar .cal-board .cal__table td { font-size: 1.02rem; padding: 10px 4px; }
+  body .calendar .cal-board .cal__table td:first-child { font-size: 1.1rem; width: 22%; }
+  body .calendar .cal-board .cal__table td:last-child { width: 24%; padding-right: 2px; }
+  body .calendar .cal-board .cal__table td:nth-child(2) { padding-left: 8px; }
+}
