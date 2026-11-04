@@ -3505,6 +3505,18 @@ html[lang="ta"] .guestbook .pcard2 .pcard2__label { font-family: var(--f-tamil-d
   .guestbook .pcard2 .pcard2__foot { top: 84%; }
 }
 
+/* ---------- 90 GUESTBOOK POSTCARD (WIDE): TRANSPARENT FRAME PICTURE OVER PAPER, FORM IN BOXES ON THE RIGHT ---------- */
+@media (min-width: 820px) {
+  .guestbook .pcard2 { background: #F4ECD9 !important; box-shadow: inset 0 0 30px rgba(96, 52, 22, .18), 0 26px 44px -20px rgba(10, 2, 2, .8) !important; }
+  .guestbook .pcard2::after { display: block; content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+    background: url("../assets/images/home/guestbook-frame.png") center / 100% 100% no-repeat; }
+  .guestbook .pcard2 > * { position: relative; z-index: 1; }
+  .guestbook .pcard2 .pcard2__msg, .guestbook .pcard2 .pcard2__line, .guestbook .pcard2 .pcard2__foot { position: absolute; }
+  .guestbook .pcard2 .pcard2__msg textarea { background: rgba(255, 252, 240, .7) !important; border: 1.5px solid #8B1E22 !important; border-radius: 4px; background-image: none !important; box-shadow: none !important; line-height: 1.5; padding: 10px 12px; font-size: 1rem; }
+  .guestbook .pcard2 .pcard2__line input { background: rgba(255, 252, 240, .7) !important; border: 1.5px solid #8B1E22 !important; border-radius: 4px; padding: 8px 12px; height: 40px; font-size: 1rem; }
+  .guestbook .pcard2 .pcard2__line .pcard2__label, .guestbook .pcard2 .pcard2__msg .pcard2__label { color: #8B1E22; }
+}
+
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
