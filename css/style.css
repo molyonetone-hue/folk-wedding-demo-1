@@ -2644,7 +2644,7 @@ html[lang="ta"] .pcard2 input, html[lang="ta"] .pcard2 textarea { font-family: v
 .pcard2 .up-field__hint { display: block; margin-top: 6px; font-size: .78rem; color: #7A5E44; }
 .pcard2__stamp { display: none; }
 /* desktop: the real postcard scan, fields laid onto its printed lines */
-@media (min-width: 820px) {
+@media (min-width: 640px) {
   .pcard2 { display: block; aspect-ratio: 1600 / 1062; padding: 0; background: url("../assets/images/home/postcard-back.jpg") center / 100% 100% no-repeat; box-shadow: 0 34px 60px -26px rgba(10, 2, 2, .85); }
   .pcard2__msg { position: absolute; left: 5.5%; top: 7%; width: 41.5%; height: 85%; display: flex; flex-direction: column; }
   .pcard2__msg textarea { flex: 1; min-height: 0; background: transparent; box-shadow: none;
@@ -2684,15 +2684,15 @@ html[lang="ta"] .pcard2 input, html[lang="ta"] .pcard2 textarea { font-family: v
 .guestbook .pcard2 .up-field input:focus, .guestbook .pcard2 .up-field textarea:focus { box-shadow: inset 0 0 0 1.5px rgba(139, 30, 34, .5); }
 .guestbook .pcard2 .up-field input::placeholder, .guestbook .pcard2 .up-field textarea::placeholder { color: rgba(31, 78, 68, .55); }
 .guestbook .pcard2 .up-field__hint { color: #7A5E44; }
-@media (min-width: 820px) {
+@media (min-width: 640px) {
   .guestbook .pcard2 .pcard2__msg textarea { box-shadow: none; background-color: transparent; background-image: repeating-linear-gradient(180deg, transparent 0 35px, rgba(139, 30, 34, .18) 35px 36px); }
   .guestbook .pcard2 .pcard2__msg textarea:focus { background-color: rgba(255, 252, 242, .45); }
   .guestbook .pcard2 .pcard2__line input { background: transparent; }
 }
-@media (max-width: 819px) { .guestbook .pcard2 .up-field input { border-bottom: 1.5px solid rgba(139, 30, 34, .55); } }
+@media (max-width: 639px) { .guestbook .pcard2 .up-field input { border-bottom: 1.5px solid rgba(139, 30, 34, .55); } }
 
 /* sit what you type exactly on the postcard's printed lines */
-@media (min-width: 820px) {
+@media (min-width: 640px) {
   .guestbook .pcard2 .pcard2__line input { height: 40px; min-height: 0; margin: 2px 0 0; padding: 0 4px 2px; line-height: 38px; }
   .guestbook .pcard2 .pcard2__line .pcard2__label { line-height: 18px; }
   .pcard2__line--1 { top: calc(45.7% - 60px); }
@@ -2703,7 +2703,7 @@ html[lang="ta"] .pcard2 input, html[lang="ta"] .pcard2 textarea { font-family: v
 /* warm the posted wishes and the phone postcard to the scanned card's cream */
 .guestbook .wishes .wish-card.pmini, .pcard2 { background-color: #EED8AE; }
 .guestbook .wishes .wish-card.pmini { background-image: linear-gradient(rgba(238, 214, 168, .62), rgba(238, 214, 168, .62)), url("../assets/images/home/tex-paper.jpg"); background-size: auto, 520px auto; }
-@media (max-width: 819px) { .pcard2 { background-image: linear-gradient(rgba(238, 214, 168, .62), rgba(238, 214, 168, .62)), url("../assets/images/home/tex-paper.jpg"); background-size: auto, 520px auto; } }
+@media (max-width: 639px) { .pcard2 { background-image: linear-gradient(rgba(238, 214, 168, .62), rgba(238, 214, 168, .62)), url("../assets/images/home/tex-paper.jpg"); background-size: auto, 520px auto; } }
 
 /* ---------- 45 TYPED WISHES IN BLACK INK ----------------------------------- */
 .guestbook .pcard2 .up-field input, .guestbook .pcard2 .up-field textarea, .pcard2 input, .pcard2 textarea { color: #1b1b1b; }
@@ -3390,7 +3390,7 @@ html[lang="ta"] .stamp--contact .help-side { font-family: var(--f-tamil-display)
 }
 
 /* ---------- 81 GUESTBOOK POSTCARD: NEW ARTWORK (FEMALE HAND + LOTUS, KOLAM BORDER, AT STAMP) ---------- */
-@media (min-width: 820px) {
+@media (min-width: 640px) {
   .guestbook .pcard2 { display: block; aspect-ratio: 3 / 2; padding: 0; transform: none; border-radius: 3px;
     background: url("../assets/images/home/guestbook-postcard.jpg") center / 100% 100% no-repeat, #EFE3C4 !important;
     box-shadow: inset 0 0 38px rgba(96, 52, 22, .28), inset 0 0 6px rgba(96, 52, 22, .22), 0 26px 44px -20px rgba(10, 2, 2, .8) !important; }
@@ -3406,10 +3406,10 @@ html[lang="ta"] .stamp--contact .help-side { font-family: var(--f-tamil-display)
   .guestbook .pcard2__line--2 { top: 84%; }
   .guestbook .pcard2__line .up-field__hint { display: none; }
 }
-@media (max-width: 819px) { .guestbook .pcard2__head { margin-bottom: 14px; } .guestbook .pcard2__title { font-family: var(--f-script); font-size: 2.2rem; color: #7A1A1E; } .guestbook .pcard2__desc { font-family: var(--f-display); font-style: italic; color: #5C3A22; } }
+@media (max-width: 639px) { .guestbook .pcard2__head { margin-bottom: 14px; } .guestbook .pcard2__title { font-family: var(--f-script); font-size: 2.2rem; color: #7A1A1E; } .guestbook .pcard2__desc { font-family: var(--f-display); font-style: italic; color: #5C3A22; } }
 
 /* ---------- 82 GUESTBOOK POSTCARD ON PHONES: ARTWORK AS A TOP BANNER, TEXT BELOW ---------- */
-@media (max-width: 819px) {
+@media (max-width: 639px) {
   .guestbook .pcard2 { background: url("../assets/images/home/guestbook-postcard.jpg") center top / 100% auto no-repeat, #EFE3C4 !important; border-radius: 3px; padding-top: 72%; box-shadow: 0 18px 30px -18px rgba(10, 2, 2, .75) !important; }
   .guestbook .pcard2__head { position: static; padding-top: 72%; margin: 0; padding-left: 6px; padding-right: 6px; }
   .guestbook .pcard2__head::before { content: ""; }
@@ -3431,14 +3431,14 @@ html[lang="ta"] .guestbook .pcard2 .pcard2__label { font-family: var(--f-tamil-d
 .guestbook .pcard2 .pcard2__line input { background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 12' preserveAspectRatio='none'%3E%3Cpath d='M2 7 C 40 3, 70 9, 110 6 S 170 3, 215 7 S 300 9, 345 5 S 380 8, 398 6' fill='none' stroke='%23A3262B' stroke-width='1.7' stroke-linecap='round'/%3E%3C/svg%3E") left bottom / 100% 12px no-repeat transparent !important; padding-bottom: 8px; }
 .guestbook .pcard2 .pcard2__line input:focus { background-color: transparent !important; }
 .guestbook .pcard2 .pcard2__line .pcard2__label { font-family: var(--f-script); }
-@media (min-width: 820px) {
+@media (min-width: 640px) {
   .guestbook .wish-form.pform { position: relative; }
   .guestbook .pform__foot { position: absolute; left: 52%; width: 40%; bottom: 4.5%; margin: 0; display: grid; justify-items: center; gap: 4px; }
   .guestbook .pform__send { min-height: 48px; padding: 0 26px; background: #A3262B !important; color: #FBEFD6 !important; border: 2px solid #5E1A1D !important; border-radius: 22px 14px 24px 12px / 14px 22px 12px 20px !important; box-shadow: 3px 4px 0 #5E1A1D, inset 0 0 0 3px #A3262B, inset 0 0 0 4px rgba(251, 239, 214, .55) !important; font-family: var(--f-script) !important; font-size: 1.35rem !important; letter-spacing: .01em; }
   .guestbook .pform__send:hover { transform: translate(-1px, -2px); }
   .guestbook #wish-status { color: #5E1A1D; }
 }
-@media (max-width: 819px) {
+@media (max-width: 639px) {
   .guestbook .pform__foot { margin-top: 22px; }
   .guestbook .pform__send { background: #A3262B !important; color: #FBEFD6 !important; border: 2px solid #5E1A1D !important; border-radius: 22px 14px 24px 12px / 14px 22px 12px 20px !important; box-shadow: 3px 4px 0 #5E1A1D !important; font-family: var(--f-script) !important; font-size: 1.35rem !important; }
 }
@@ -3452,14 +3452,14 @@ html[lang="ta"] .guestbook .pcard2 .pcard2__label { font-family: var(--f-tamil-d
 .guestbook .pcard2 .pform__send:hover, .guestbook .pcard2 .pform__send:focus-visible { background: #6E1518 !important; }
 .guestbook .pcard2 .pform__send svg { stroke: currentColor; }
 .guestbook .pcard2 .up-status { margin: 0; color: #5E1A1D; font-family: var(--f-display); font-style: italic; text-align: center; }
-@media (min-width: 820px) {
+@media (min-width: 640px) {
   .guestbook .pcard2 .pcard2__msg { top: 24%; height: 38%; }
   .guestbook .pcard2 .pcard2__line--1 { top: 66%; }
   .guestbook .pcard2 .pcard2__line--2 { top: 77%; }
   .guestbook .pcard2 .pcard2__foot { position: absolute; left: 52%; top: 88%; width: 40%; padding: 0; }
   .guestbook .pcard2 .pform__send { width: 100%; }
 }
-@media (max-width: 819px) {
+@media (max-width: 639px) {
   .guestbook .pcard2 .pcard2__foot { margin: 22px 6px 26px; }
 }
 
@@ -3469,7 +3469,7 @@ html[lang="ta"] .guestbook .pcard2 .pcard2__label { font-family: var(--f-tamil-d
 .guestbook .pcard2 .pcard2__line input:focus, .guestbook .pcard2 .up-field textarea:focus { background-color: rgba(255, 252, 240, .6) !important; }
 
 /* ---------- 86 GUESTBOOK POSTCARD ON PHONES: ONE FLAT PAPER COLOUR, ARTWORK FADES INTO IT ---------- */
-@media (max-width: 819px) {
+@media (max-width: 639px) {
   .guestbook .pcard2 { background: #F4ECD9 !important; }
   .guestbook .pcard2::after { content: ""; position: absolute; left: 0; right: 0; top: 0; height: auto; aspect-ratio: 3 / 2; z-index: 0; pointer-events: none;
     background: url("../assets/images/home/guestbook-postcard.jpg") center top / 100% 100% no-repeat;
@@ -3478,14 +3478,14 @@ html[lang="ta"] .guestbook .pcard2 .pcard2__label { font-family: var(--f-tamil-d
 }
 
 /* ---------- 87 GUESTBOOK POSTCARD ON PHONES: PORTRAIT ARTWORK (ART ON TOP, WRITING AREA BELOW, ONE SHEET) ---------- */
-@media (max-width: 819px) {
+@media (max-width: 639px) {
   .guestbook .pcard2 { background: url("../assets/images/home/guestbook-postcard-portrait.jpg") center top / 100% auto no-repeat, #F4ECD9 !important; padding-top: 75% !important; }
   .guestbook .pcard2::after { display: none; }
   .guestbook .pcard2::before { display: none; }
 }
 
 /* ---------- 88 GUESTBOOK POSTCARD ON PHONES: FIELDS INSIDE THE BORDER, KOLAM BAND ON THE BOTTOM, CALL-STYLE POST BUTTON ---------- */
-@media (max-width: 819px) {
+@media (max-width: 639px) {
   .guestbook .pcard2 { padding-left: 13%; padding-right: 13%; padding-bottom: 64px; }
   .guestbook .pcard2::after { display: block; content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 26px; z-index: 0; pointer-events: none;
     background: var(--kolam-orn) center / auto 100% repeat-x; }
@@ -3493,20 +3493,20 @@ html[lang="ta"] .guestbook .pcard2 .pcard2__label { font-family: var(--f-tamil-d
   .guestbook .pcard2 .pform__send { border-radius: 999px !important; background: #5E1A1D !important; color: #F8EFD6 !important; min-height: 42px; padding: 8px 20px; font-size: .8rem; font-weight: 700; letter-spacing: .02em; }
   .guestbook .pcard2 .pform__send:hover, .guestbook .pcard2 .pform__send:focus-visible { background: #3E0F11 !important; }
 }
-@media (min-width: 820px) {
+@media (min-width: 640px) {
   .guestbook .pcard2 .pform__send { border-radius: 999px !important; background: #5E1A1D !important; color: #F8EFD6 !important; min-height: 42px; padding: 8px 20px; font-size: .8rem; font-weight: 700; letter-spacing: .02em; }
 }
 
 /* ---------- 89 GUESTBOOK POSTCARD: NO RELATION FIELD; NAME AND POST BUTTON INSIDE THE ARTWORK WITH THE WISH ---------- */
 .guestbook .pcard2 .pcard2__line--2 { display: none !important; }
-@media (min-width: 820px) {
+@media (min-width: 640px) {
   .guestbook .pcard2 .pcard2__msg { top: 22%; height: 40%; }
   .guestbook .pcard2 .pcard2__line--1 { top: 71%; }
   .guestbook .pcard2 .pcard2__foot { top: 84%; }
 }
 
 /* ---------- 90 GUESTBOOK POSTCARD (WIDE): TRANSPARENT FRAME PICTURE OVER PAPER, FORM IN BOXES ON THE RIGHT ---------- */
-@media (min-width: 820px) {
+@media (min-width: 640px) {
   .guestbook .pcard2 { background: #F4ECD9 !important; box-shadow: inset 0 0 30px rgba(96, 52, 22, .18), 0 26px 44px -20px rgba(10, 2, 2, .8) !important; }
   .guestbook .pcard2::after { display: block; content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
     background: url("../assets/images/home/guestbook-frame.png") center / 100% 100% no-repeat; }
@@ -3516,6 +3516,52 @@ html[lang="ta"] .guestbook .pcard2 .pcard2__label { font-family: var(--f-tamil-d
   .guestbook .pcard2 .pcard2__line input { background: rgba(255, 252, 240, .7) !important; border: 1.5px solid #8B1E22 !important; border-radius: 4px; padding: 8px 12px; height: 40px; font-size: 1rem; }
   .guestbook .pcard2 .pcard2__line .pcard2__label, .guestbook .pcard2 .pcard2__msg .pcard2__label { color: #8B1E22; }
 }
+
+/* ---------- 91 GUESTBOOK POSTCARD ON PHONES: CUT-OUT ART ON PAPER, CSS KOLAM BANDS + DOUBLE RULE, BOXED FIELDS ---------- */
+@media (max-width: 639px) {
+  .guestbook .pcard2 { position: relative; display: block; aspect-ratio: auto !important; transform: none; border-radius: 3px;
+    padding: 80% 9% 64px !important;
+    background: url("../assets/images/home/guestbook-frame-tall.png") center top / 100% auto no-repeat, #F4ECD9 !important;
+    outline: 1px solid rgba(139, 30, 34, .5); outline-offset: -12px;
+    box-shadow: inset 0 0 0 14px rgba(0, 0, 0, 0), inset 0 0 0 15px rgba(139, 30, 34, .25), inset 0 0 28px rgba(96, 52, 22, .18), 0 18px 30px -18px rgba(10, 2, 2, .75) !important; }
+  .guestbook .pcard2::before, .guestbook .pcard2::after { display: block !important; content: ""; position: absolute; left: 20px; right: 20px; height: 20px; z-index: 0; pointer-events: none; background: var(--kolam-orn) center / auto 100% repeat-x; opacity: .8; -webkit-mask: none; mask: none; }
+  .guestbook .pcard2::before { top: 18px; }
+  .guestbook .pcard2::after { top: auto; bottom: 18px; }
+  .guestbook .pcard2 > * { position: relative; z-index: 1; }
+  .guestbook .pcard2__head { display: none !important; }
+  .guestbook .pcard2 .pcard2__msg, .guestbook .pcard2 .pcard2__line { position: static; width: 100%; height: auto; margin: 0 0 16px; }
+  .guestbook .pcard2 .pcard2__msg textarea { background: rgba(255, 252, 240, .75) !important; border: 1.5px solid #8B1E22 !important; border-radius: 4px; background-image: none !important; box-shadow: none !important; line-height: 1.5; padding: 10px 12px; min-height: 120px; font-size: 1rem; }
+  .guestbook .pcard2 .pcard2__line input { background: rgba(255, 252, 240, .75) !important; border: 1.5px solid #8B1E22 !important; border-radius: 4px; padding: 8px 12px; height: 42px; font-size: 1rem; }
+  .guestbook .pcard2 .pform__foot { margin: 6px 0 0; }
+  .guestbook .pcard2 .pform__send { width: 100%; }
+}
+
+/* ---------- 92 GUESTBOOK POSTCARD: CSS KOLAM BANDS + DOUBLE RULE AROUND THE CUT-OUT ART, AT MONOGRAM STAMP, TIDY FIELD POSITIONS ---------- */
+/* shared: the AT monogram stamp */
+.guestbook .pcard2__stamp { display: grid !important; place-items: center; position: absolute; z-index: 2; background: #F8F1E1; border: 1px solid rgba(139, 30, 34, .55); outline: 1px dashed rgba(139, 30, 34, .4); outline-offset: 3px; }
+.guestbook .pcard2__mono { display: inline-flex; align-items: baseline; gap: 2px; font-family: var(--f-script); font-size: 1.9rem; line-height: 1; color: #8B1E22; }
+.guestbook .pcard2__mono i { font-family: var(--f-display); font-style: italic; font-size: .7em; color: #B28A4E; }
+.guestbook .pcard2__stamp img { display: none; }
+@media (min-width: 640px) {
+  .guestbook .pcard2 { background: url("../assets/images/home/guestbook-frame.png") center / 100% 100% no-repeat, #F4ECD9 !important;
+    outline: 1px solid rgba(139, 30, 34, .5); outline-offset: -14px; box-shadow: inset 0 0 0 17px rgba(0, 0, 0, 0), inset 0 0 0 18px rgba(139, 30, 34, .25), inset 0 0 30px rgba(96, 52, 22, .18), 0 26px 44px -20px rgba(10, 2, 2, .8) !important; }
+  .guestbook .pcard2::before, .guestbook .pcard2::after { display: block !important; content: ""; position: absolute; left: 28px; right: 28px; height: 22px; z-index: 0; pointer-events: none; background: var(--kolam-orn) center / auto 100% repeat-x; opacity: .8; -webkit-mask: none; mask: none; }
+  .guestbook .pcard2::before { top: 22px; bottom: auto; }
+  .guestbook .pcard2::after { bottom: 22px; top: auto; }
+  .guestbook .pcard2__stamp { right: 7%; top: 11%; left: auto; width: 11%; height: 22%; min-width: 64px; }
+  .guestbook .pcard2__mono { font-size: clamp(1.3rem, 2.6vw, 2.1rem); }
+  .guestbook .pcard2 .pcard2__msg { top: 25%; height: 34%; left: 52%; width: 40%; }
+  .guestbook .pcard2 .pcard2__line--1 { top: 64%; }
+  .guestbook .pcard2 .pcard2__foot { top: 82%; }
+}
+@media (max-width: 639px) {
+  .guestbook .pcard2__stamp { right: 9%; top: 46px; width: 62px; height: 78px; }
+  .guestbook .pcard2__mono { font-size: 1.5rem; }
+}
+
+/* ---------- 93 GUESTBOOK INTRO: CENTRED ---------- */
+.guestbook .section-head { text-align: center; }
+.guestbook .section-intro { text-align: center; margin-inline: auto; max-width: 34rem; }
 
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
