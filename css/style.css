@@ -3805,6 +3805,57 @@ html[lang="ta"] .footer .footer__date { letter-spacing: .06em; }
 @media (max-width: 759px) { .stamp--contact .stamp__face::before { right: -6px !important; width: 72px !important; height: 72px !important; } .stamp--contact .stamp__face::after { left: -6px !important; width: 66px !important; height: 66px !important; } }
 @media (prefers-reduced-motion: reduce) { .stamp--contact .stamp__face::before, .stamp--contact .stamp__face::after { transform: none; } }
 
+/* ---------- 109 NEED HELP: MOCKUP CARDS (MAROON GLASS, GOLD BORDER, ROWS WITH BUTTONS), BRIDE / GROOM ON THE SIDE ---------- */
+.help-card { display: grid !important; grid-template-columns: 1fr !important; gap: 30px !important; max-width: 780px !important; margin: 0 auto; }
+.help-col.stamp { margin-top: 0 !important; }
+.help-col.stamp .stamp__paper { border-radius: 28px !important; border: 1px solid rgba(227, 185, 104, .75) !important;
+  background: linear-gradient(135deg, rgba(96, 20, 24, .86), rgba(70, 12, 16, .9)) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(1.2); backdrop-filter: blur(14px) saturate(1.2);
+  box-shadow: 0 26px 46px -22px rgba(0, 0, 0, .7), inset 0 1px 0 rgba(255, 255, 255, .12) !important; }
+.help-col.stamp .stamp__face { padding: 34px clamp(22px, 4vw, 40px) 20px !important; }
+@media (min-width: 640px) { .help-col.stamp .stamp__face { padding-right: 214px !important; } }
+/* heading + underline */
+.stamp--contact .help-side { font-family: var(--f-display) !important; font-style: italic; font-weight: 400; font-size: clamp(1.4rem, 3.4vw, 1.85rem) !important; letter-spacing: .12em !important; text-transform: none !important; color: #E3B968 !important; text-align: left; }
+html[lang="ta"] .stamp--contact .help-side { font-style: normal; letter-spacing: .02em !important; }
+.stamp--contact .help-side::after { width: 130px !important; height: 1.5px !important; margin: 14px 0 6px !important; background: linear-gradient(90deg, #E3B968, rgba(227, 185, 104, 0)) !important; }
+/* each person: details left, buttons right */
+.stamp--contact .help-p, .stamp--contact .help-p + .help-p { display: grid !important; grid-template-columns: 1fr auto; column-gap: 22px; align-items: center; align-content: center; padding: 24px 0 !important; text-align: left !important; }
+.stamp--contact .help-p + .help-p { border-top: 1px solid rgba(227, 185, 104, .5) !important; }
+.stamp--contact .help-p__name { grid-column: 1; grid-row: 1; order: 0; margin: 0; font-family: var(--f-display) !important; font-weight: 500; font-size: clamp(1.45rem, 3.6vw, 2rem) !important; color: #FBF1DC !important; line-height: 1.15; }
+.stamp--contact .help-p__rel { grid-column: 1; grid-row: 2; order: 0; margin: 6px 0 0; font-family: var(--f-sans) !important; font-style: normal !important; font-size: .95rem !important; font-weight: 400 !important; letter-spacing: .04em !important; text-transform: none !important; color: rgba(251, 241, 220, .86) !important; }
+.stamp--contact .help-p__num { grid-column: 1; grid-row: 3; margin: 6px 0 0; font-family: var(--f-sans) !important; font-weight: 600 !important; font-size: 1.05rem !important; letter-spacing: .03em !important; color: #E3B968 !important; }
+.stamp--contact .help-p__btns { grid-column: 2; grid-row: 1 / span 3; display: flex !important; gap: 12px; margin: 0 !important; flex-wrap: nowrap; }
+/* buttons: Call outlined in cream; WhatsApp cream-filled with its own green glyph */
+.help-card .stamp--contact .help-p__btns a { min-height: 48px; padding: 0 22px !important; font-family: var(--f-sans); font-size: .95rem !important; font-weight: 600 !important; letter-spacing: .01em; text-transform: none !important; border-radius: 999px !important; gap: 10px; white-space: nowrap; }
+.help-card .stamp--contact .help-p__btns a svg { width: 20px; height: 20px; }
+.help-card .stamp--contact .help-p__btns a.brand--call { background: transparent !important; color: #FBF1DC !important; border: 1.5px solid rgba(251, 241, 220, .85) !important; }
+.help-card .stamp--contact .help-p__btns a.brand--wa { background: #F6EAD0 !important; color: #5A1418 !important; border: 1.5px solid #F6EAD0 !important; }
+.help-card .stamp--contact .help-p__btns a.brand--wa svg { color: #25D366; }
+.help-card .stamp--contact .help-p__btns a.brand--call:hover { background: rgba(251, 241, 220, .14) !important; }
+.help-card .stamp--contact .help-p__btns a.brand--wa:hover, .help-card .stamp--contact .help-p__btns a.brand--wa:focus-visible { background: #FFF6E2 !important; border-color: #FFF6E2 !important; color: #5A1418 !important; }
+/* bride / groom illustration on the side, on an arched cream tile (replaces the small stickers) */
+.stamp--contact .stamp__face::after { display: none !important; }
+.stamp--contact .stamp__face::before { content: "" !important; display: block !important; position: absolute !important; z-index: 3; top: -24px !important; bottom: 22px !important; right: 24px !important; left: auto !important; width: 152px !important; height: auto !important; transform: none !important; opacity: 1 !important; mix-blend-mode: normal !important; pointer-events: none;
+  border-radius: 76px 76px 16px 16px !important; background-color: #F3E5C6 !important; background-repeat: no-repeat !important; background-position: 50% 96% !important; background-size: 215% auto !important;
+  box-shadow: 0 0 0 3px rgba(227, 185, 104, .85), 0 16px 28px -10px rgba(0, 0, 0, .55) !important; }
+.help-col--bride .stamp__face::before { background-image: url("../assets/images/home/folk-bride.png") !important; }
+.help-col--groom .stamp__face::before { background-image: url("../assets/images/home/folk-groom.png") !important; }
+/* narrower screens: buttons drop under the details; the figure tile shrinks to the top corner */
+@media (max-width: 639px) {
+  .stamp--contact .help-p, .stamp--contact .help-p + .help-p { grid-template-columns: 1fr; row-gap: 4px; }
+  .stamp--contact .help-p__btns { grid-column: 1; grid-row: 4; margin-top: 14px !important; flex-wrap: wrap; }
+  .help-col.stamp .stamp__face { padding-right: 96px !important; }
+  .stamp--contact .stamp__face::before { top: -16px !important; bottom: auto !important; right: 14px !important; width: 74px !important; height: 104px !important; border-radius: 37px 37px 12px 12px !important; }
+}
+
+/* ---------- 110 NEED HELP ON PHONES: BUTTONS IN ONE ROW, FIGURE FITTED TO THE SMALL TILE ---------- */
+@media (max-width: 639px) {
+  .stamp--contact .help-p__btns { flex-wrap: nowrap !important; width: 100%; gap: 10px !important; }
+  .help-card .stamp--contact .help-p__btns a { flex: 1 1 0; justify-content: center; min-height: 44px; padding: 0 12px !important; font-size: .88rem !important; gap: 8px; }
+  .help-card .stamp--contact .help-p__btns a svg { width: 18px; height: 18px; }
+  .stamp--contact .stamp__face::before { background-size: 124% auto !important; background-position: 50% 100% !important; }
+}
+
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
