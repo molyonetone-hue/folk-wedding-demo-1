@@ -3862,6 +3862,34 @@ html[lang="ta"] .stamp--contact .help-side { font-style: normal; letter-spacing:
 @media (min-width: 640px) { .stamp--contact .stamp__face::before { width: 190px !important; right: 14px !important; background-size: 175% auto !important; background-position: 50% 96% !important; } .help-col.stamp .stamp__face { padding-right: 214px !important; } }
 @media (max-width: 639px) { .stamp--contact .stamp__face::before { width: 92px !important; height: 132px !important; top: -34px !important; right: 6px !important; background-size: contain !important; background-position: 50% 100% !important; } }
 
+/* ---------- 112 NEED HELP: BIGGER UNCROPPED FIGURES, BRIDE ON THE LEFT, GROOM ON THE RIGHT, SCRAPBOOK STICKERS ---------- */
+.help-col.stamp, .help-card, .stamp--contact .stamp__face { overflow: visible !important; }
+.stamp--contact .stamp__face::before { background-size: contain !important; background-position: center bottom !important; background-repeat: no-repeat !important; background-color: transparent !important; transform: rotate(-3deg) !important; }
+.help-col--groom .stamp__face::before { transform: rotate(3deg) !important; }
+@media (min-width: 640px) {
+  .stamp--contact .stamp__face::before { width: 230px !important; height: 330px !important; top: -58px !important; bottom: auto !important; }
+  .help-col--bride .stamp__face::before { left: -118px !important; right: auto !important; }
+  .help-col--groom .stamp__face::before { right: -118px !important; left: auto !important; }
+  .help-col--bride .stamp__face { padding-left: 262px !important; padding-right: 34px !important; }
+  .help-col--groom .stamp__face { padding-right: 262px !important; padding-left: 34px !important; }
+}
+@media (max-width: 639px) {
+  .stamp--contact .stamp__face::before { width: 130px !important; height: 190px !important; top: -58px !important; bottom: auto !important; }
+  .help-col--bride .stamp__face::before { left: -22px !important; right: auto !important; }
+  .help-col--groom .stamp__face::before { right: -22px !important; left: auto !important; }
+  .help-col--bride .stamp__face { padding-left: 30px !important; padding-right: 30px !important; }
+  .help-col--groom .stamp__face { padding-left: 30px !important; padding-right: 30px !important; }
+}
+
+/* ---------- 113 NEED HELP: SIDE PADDING THAT WINS OVER THE CARD DEFAULTS ---------- */
+@media (min-width: 640px) {
+  .help-card .help-col--bride.stamp .stamp__face { padding-left: 262px !important; padding-right: 34px !important; }
+  .help-card .help-col--groom.stamp .stamp__face { padding-right: 262px !important; padding-left: 34px !important; }
+}
+@media (max-width: 639px) {
+  .help-card .help-col.stamp .stamp__face { padding-left: 30px !important; padding-right: 30px !important; }
+}
+
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
