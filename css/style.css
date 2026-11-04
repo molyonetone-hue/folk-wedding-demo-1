@@ -3743,6 +3743,14 @@ html[lang="ta"] .guestbook .wishes .wish-card__name { letter-spacing: 0; text-tr
     radial-gradient(circle at 63% 72%, rgba(255, 235, 200, .16) 0 1.4px, transparent 2.4px),
     radial-gradient(circle at 84% 22%, rgba(255, 235, 200, .14) 0 1px, transparent 2px); mix-blend-mode: screen; }
 
+/* ---------- 106 MEMORIES FILM: GENERATED WORN FILM STRIP AS THE BACKGROUND, PHOTOS FITTED BETWEEN THE SPROCKET ROWS ---------- */
+.memories .film { --fh: clamp(150px, 19vw, 240px); padding: calc(var(--fh) / 3.1) 0 !important;
+  background: url("../assets/images/home/film-strip.jpg") 0 0 / auto 100% repeat-x, #1A100A !important;
+  box-shadow: 0 20px 34px -22px rgba(30, 10, 4, .85) !important; border: 0 !important; }
+.memories .film::before, .memories .film::after, .memories .film__track::after { display: none !important; }
+.memories .film__frame { width: var(--fh) !important; }
+.memories .film__frame img { border: 3px solid #0D0704; border-radius: 3px; filter: sepia(.38) saturate(.82) contrast(1.12) brightness(.95) !important; box-shadow: inset 0 0 24px rgba(50, 24, 8, .5); }
+
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
