@@ -3995,3 +3995,60 @@ html[lang="ta"] .stamp--contact .help-side { font-style: normal; letter-spacing:
   #contacts .help-col--groom.stamp .stamp__face::before { right: -216px !important; }
   #contacts.help { padding-bottom: clamp(100px, 10vw, 140px) !important; }
 }
+
+/* ---------- 122 NEED HELP: MATCHES THE REFERENCE (MAROON HALL, TORAN, PILLARS AND LAMPS, GLASS CARD, PAINTED BRIDE AND GROOM) ---------- */
+/* background: deep maroon with soft light, pillars and lamps at the edges, toran garlands across the top */
+#contacts.help { background: radial-gradient(ellipse at 50% 22%, #7E141B 0%, #5A0B11 55%, #3E060A 100%) !important; }
+#contacts .help-deco { position: absolute; top: 0; bottom: 0; width: clamp(90px, 11vw, 170px); z-index: 0; pointer-events: none; background-repeat: no-repeat; background-size: 100% 100%; }
+#contacts .help-deco--l { left: 0; background-image: url("../assets/images/home/help-deco-left.jpg"); -webkit-mask-image: linear-gradient(90deg, #000 55%, transparent); mask-image: linear-gradient(90deg, #000 55%, transparent); }
+#contacts .help-deco--r { right: 0; background-image: url("../assets/images/home/help-deco-right.jpg"); -webkit-mask-image: linear-gradient(270deg, #000 55%, transparent); mask-image: linear-gradient(270deg, #000 55%, transparent); }
+#contacts::before { content: ""; position: absolute; left: 0; right: auto; top: 22px; width: 50%; height: clamp(84px, 9vw, 124px); z-index: 2; pointer-events: none; filter: none;
+  background: url("../assets/images/home/help-toran-left.png") left top / auto 100% no-repeat; }
+#contacts::after { content: ""; position: absolute; right: 0; left: auto; top: 22px; width: 50%; height: clamp(84px, 9vw, 124px); z-index: 2; pointer-events: none;
+  background: url("../assets/images/home/help-toran-right.png") right top / auto 100% no-repeat; }
+#contacts .wrap { position: relative; z-index: 1; }
+
+/* the card: glassmorphic, double gold border, soft sheen at the top right */
+#contacts .help-col.stamp .stamp__paper { border: 2px solid #D9A94E !important; border-radius: 30px !important;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60' fill='none' stroke='%23E3B968' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M30 10C23 19 23 30 30 38C37 30 37 19 30 10Z'/%3E%3Cpath d='M30 38C19 36 12 28 12 20C21 20 28 27 30 38Z'/%3E%3Cpath d='M30 38C41 36 48 28 48 20C39 20 32 27 30 38Z'/%3E%3Cpath d='M7 46C20 49 40 49 53 46'/%3E%3Cpath d='M18 52C26 54 34 54 42 52'/%3E%3C/svg%3E") left 18px top 14px / 52px 52px no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60' fill='none' stroke='%23E3B968' stroke-width='1.2' stroke-linecap='round' opacity='.85'%3E%3Cpath d='M30 5L55 30L30 55L5 30Z'/%3E%3Cpath d='M30 15L45 30L30 45L15 30Z'/%3E%3Cpath d='M30 25L35 30L30 35L25 30Z'/%3E%3Ccircle cx='30' cy='5' r='2.2' fill='%23E3B968'/%3E%3Ccircle cx='55' cy='30' r='2.2' fill='%23E3B968'/%3E%3Ccircle cx='30' cy='55' r='2.2' fill='%23E3B968'/%3E%3Ccircle cx='5' cy='30' r='2.2' fill='%23E3B968'/%3E%3C/svg%3E") right 20px top 16px / 46px 46px no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60' fill='none' stroke='%23E3B968' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M30 10C23 19 23 30 30 38C37 30 37 19 30 10Z'/%3E%3Cpath d='M30 38C19 36 12 28 12 20C21 20 28 27 30 38Z'/%3E%3Cpath d='M30 38C41 36 48 28 48 20C39 20 32 27 30 38Z'/%3E%3Cpath d='M7 46C20 49 40 49 53 46'/%3E%3Cpath d='M18 52C26 54 34 54 42 52'/%3E%3C/svg%3E") left 18px bottom 14px / 52px 52px no-repeat,
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60' fill='none' stroke='%23E3B968' stroke-width='1.2' stroke-linecap='round' opacity='.85'%3E%3Cpath d='M30 5L55 30L30 55L5 30Z'/%3E%3Cpath d='M30 15L45 30L30 45L15 30Z'/%3E%3Cpath d='M30 25L35 30L30 35L25 30Z'/%3E%3Ccircle cx='30' cy='5' r='2.2' fill='%23E3B968'/%3E%3Ccircle cx='55' cy='30' r='2.2' fill='%23E3B968'/%3E%3Ccircle cx='30' cy='55' r='2.2' fill='%23E3B968'/%3E%3Ccircle cx='5' cy='30' r='2.2' fill='%23E3B968'/%3E%3C/svg%3E") right 20px bottom 16px / 46px 46px no-repeat,
+    radial-gradient(ellipse 60% 55% at 92% 0%, rgba(255, 255, 255, .20), rgba(255, 255, 255, 0) 70%),
+    linear-gradient(120deg, rgba(255, 255, 255, .10), rgba(255, 255, 255, 0) 38%),
+    linear-gradient(160deg, rgba(150, 34, 38, .50), rgba(96, 18, 22, .62)) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(1.35); backdrop-filter: blur(20px) saturate(1.35);
+  box-shadow: 0 30px 56px -26px rgba(0, 0, 0, .8), inset 0 0 0 6px rgba(217, 169, 78, 0), inset 0 0 0 7px rgba(217, 169, 78, .55), inset 0 1px 0 rgba(255, 255, 255, .25) !important; }
+/* heading: gold italic with a short solid underline */
+#contacts .stamp--contact .help-side { font-size: clamp(1.5rem, 3vw, 2.1rem) !important; letter-spacing: .1em !important; color: #E3B968 !important; }
+#contacts .stamp--contact .help-side::after { width: 130px !important; height: 2px !important; background: #E3B968 !important; margin: 12px 0 4px !important; }
+/* rows: serif name, sans relation, gold number */
+#contacts .stamp--contact .help-p__name { font-size: clamp(1.6rem, 3.2vw, 2.4rem) !important; font-weight: 600 !important; letter-spacing: .01em; }
+#contacts .stamp--contact .help-p__rel { font-size: 1.05rem !important; color: rgba(251, 241, 220, .92) !important; }
+#contacts .stamp--contact .help-p__num { font-size: 1.15rem !important; font-weight: 600 !important; color: #E3B968 !important; }
+/* buttons: Call outlined in cream; WhatsApp cream gradient with a maroon logo */
+.help-card #contacts, #contacts .help-card .stamp--contact .help-p__btns a { min-height: 52px; font-size: 1.05rem !important; font-weight: 600 !important; padding: 0 26px !important; }
+#contacts .help-card .stamp--contact .help-p__btns a.brand--call { background: rgba(255, 255, 255, .04) !important; border: 1.5px solid rgba(251, 241, 220, .9) !important; color: #FBF1DC !important; }
+#contacts .help-card .stamp--contact .help-p__btns a.brand--wa { background: linear-gradient(180deg, #FFF3DB, #F1DDB3) !important; border: 1.5px solid #F6E6C4 !important; color: #5A1418 !important; box-shadow: 0 8px 18px -8px rgba(0, 0, 0, .55); }
+#contacts .help-card .stamp--contact .help-p__btns a.brand--wa svg { color: #5A1418 !important; }
+
+/* painted bride and groom from the reference style, each about 1.35 times the card height, overlapping the card edge */
+.help-col--bride .stamp__face::before { background-image: url("../assets/images/home/help-bride.png") !important; }
+.help-col--groom .stamp__face::before { background-image: url("../assets/images/home/help-groom.png") !important; }
+@media (min-width: 900px) {
+  #contacts .help-col.stamp .stamp__face::before { top: -17% !important; bottom: auto !important; height: 135% !important; width: auto !important; aspect-ratio: 277 / 798; background-size: 100% 100% !important; background-position: center !important; filter: drop-shadow(0 14px 22px rgba(0, 0, 0, .5)) !important; transform: none !important; }
+  #contacts .help-col--bride.stamp .stamp__face::before { left: 0 !important; right: auto !important; transform: translateX(-70%) !important; }
+  #contacts .help-col--groom.stamp .stamp__face::before { right: 0 !important; left: auto !important; transform: translateX(70%) !important; }
+}
+@media (max-width: 899px) {
+  #contacts .help-col.stamp .stamp__face::before { background-size: contain !important; filter: drop-shadow(0 10px 14px rgba(0, 0, 0, .5)) !important; }
+}
+
+
+/* ---------- 123 NEED HELP: ROOM FOR THE FIGURES ABOVE THE CARDS, WIDER CARDS, SO NAMES STAY ON ONE LINE ---------- */
+#contacts.help .wrap { max-width: 1260px !important; }
+#contacts .help-card { max-width: 1060px !important; }
+#contacts .section-head { margin-bottom: clamp(70px, 8vw, 110px) !important; }
+#contacts .stamp--contact .help-p__name { font-size: clamp(1.45rem, 2.6vw, 2.05rem) !important; white-space: nowrap; }
+@media (max-width: 899px) { #contacts .stamp--contact .help-p__name { white-space: normal; } #contacts .section-head { margin-bottom: 40px !important; } }
