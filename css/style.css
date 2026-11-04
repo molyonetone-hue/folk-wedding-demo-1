@@ -3696,6 +3696,10 @@ html[lang="ta"] .guestbook .wishes .wish-card__name { letter-spacing: 0; text-tr
 .memories .film__frame::after { display: none !important; }
 .memories .film__frame img { border: 2px solid #120A06; filter: sepia(.28) saturate(.82) contrast(1.12) brightness(.97) !important; box-shadow: inset 0 0 22px rgba(60, 30, 10, .45); }
 
+/* ---------- 104 MEMORIES: KOLAM MOTIF ABOVE THE HEADING ---------- */
+.memories__kolam { width: clamp(64px, 9vw, 92px); aspect-ratio: 1; margin: 0 auto clamp(14px, 2vw, 22px); color: #8B1E22; }
+.memories__kolam svg { display: block; width: 100%; height: 100%; overflow: visible; color: #8B1E22; }
+
 /* ---------- 16 MOTION PREFERENCES ---------------------------------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

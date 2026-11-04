@@ -147,7 +147,7 @@ window.WEDDING_CONFIG = {
       googleMaps: "Google Maps", waze: "Waze", getDirections: "Get directions",
       privateAddress: "Exact address shared personally by the family.",
       memoriesTitle: "Share Our Wedding Memories",
-      memoriesIntro: "The little moments, through your eyes.",
+      memoriesIntro: "Got photos or videos from the wedding? Please share every one of them here. Files too large to upload? WhatsApp them to any of our contacts and we will add them for you.",
       addPhotos: "Add your photos",
       scanToShare: "Scan to share your photos",
       sharePhotos: "Share Photos", viewGuestGallery: "View Guest Gallery",
@@ -155,7 +155,7 @@ window.WEDDING_CONFIG = {
       shareStep1: "Scan the code or tap Share Photos.",
       shareStep2: "Pick your photos and videos. No sign-in, no app.",
       shareStep3: "Tap Send. They go straight into our wedding album.",
-      shareAlt: "Video too big? WhatsApp it to any of our siblings and they'll add it for you.",
+      shareAlt: "Video too big? WhatsApp it to any of our contacts and we will add it for you.",
       shareStep2Form: "Sign in with your Google account and choose your photos or videos.",
       shareAltForm: "No Google account? WhatsApp your photos to any of our siblings and they'll add them for you.",
       // Upload page (upload.html)
